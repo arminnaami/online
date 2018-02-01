@@ -122,6 +122,9 @@
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>The American System of Measures (US Customary Units)</h4></div>
+				<div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
+				<span class="" >American weight and measures are based on units used in Britain prior to 1824, when imperial system was officially established. The US law of 1866 set a relationship with the metric system by defining the meter as equal to 39.37 in. Since then all measures were redefined in terms of metric units with the last minimal adjustment in 1959. However the old standard of 1ft was retained with the name US survey foot.</span>
+              </div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
@@ -249,6 +252,9 @@
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>British (Imperial) Measure</h4></div>
+				<div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
+				<span class="" >The first English official measurement standards were defined in 15th century. British system of units, known as imperial units, was established in 1824. Later in 1963 the standards were redefined in terms of metre stantard maintained in Paris. From 1995 the UK adopted metric units for general use. The only imperial measures of length that can be officially used now are miles, yards, feet and inches for road traffic signs.</span>
+              </div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
@@ -566,6 +572,9 @@
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>International Nautical Measure</h4></div>
+				<div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
+				<span class="" >The international nautical mile was defined by the First International Extraordinary Hydrographic Conference, Monaco in 1929. This is the only definition in widespread current use, and is the one accepted by the International Bureau of Weights and Measures. Before 1929 different countries had different definitions, and the Soviet Union, the United Kingdom and the United States did not immediately accept the international value.</span>
+              </div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
@@ -603,6 +612,9 @@
 			
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>US Nautical Measure</h4></div>
+				<div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
+				<span class="" >These measures were abandoned in favor of the international nautical measures in 1954.</span>
+              </div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
@@ -634,6 +646,9 @@
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>British (Imperial) Nautical Measure</h4></div>
+				<div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
+				<span class="" >These measures were abandoned in favor of the international nautical measures in 1970.</span>
+              </div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
@@ -656,6 +671,9 @@
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Spanish Customary Units Still In Use Today</h4></div>
+				<div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
+				<span class="" >These units are still actively used in some countries of Latin America. Their values vary from country to country. You can find more old Spanish customary units on our historical lengths page.</span>
+              </div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
@@ -1126,6 +1144,354 @@
                 </form>
               </div>
             </div>
+
+			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
+              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Hong Kong units</h4></div>
+              <div class="panel-body mai-end">
+                <form method = "POST">
+                  <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>cek</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+					<div class="col-sm-3">
+					 <label>tsun</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+
+				  <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>fan</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
+              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Thai units</h4></div>
+				<div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
+				<span class="" >Some of these units are still in use even though metric system was formally established in 1923. Before the metrication the old units were standartied to exact metric values.</span>
+              </div>
+              <div class="panel-body mai-end">
+                <form method = "POST">
+                  <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>yot</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+					<div class="col-sm-3">
+					 <label>sok</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+
+				  <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>sen</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+					<div class="col-sm-3">
+					 <label>khuep</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+
+				  <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>wa</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+					<div class="col-sm-3">
+					 <label>nio</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+
+				  <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>krabiat</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
+              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Optical</h4></div>
+              <div class="panel-body mai-end">
+                <form method = "POST">
+                  <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>dioptre (diopter)</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+			
+			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
+              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Geographical (German)</h4></div>
+              <div class="panel-body mai-end">
+                <form method = "POST">
+                  <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>geographical mile</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
+              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Computer Equipment</h4></div>
+				<div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
+				<span class="" >A rack unit, U or RU is a unit of measure that describes the height of equipment designed to mount in a 19-inch rack or a 23-inch rack. The 19-inch (482.6 mm) or 23-inch (584.2 mm) dimension refers to the width of the equipment mounting frame in the rack including the frame; the width of the equipment that can be mounted inside the rack is less.</span>
+              </div>
+              <div class="panel-body mai-end">
+                <form method = "POST">
+                  <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>rack unit (U)</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+					<div class="col-sm-3">
+					 <label>horizontal pitch (HP)</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
+              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Typographical (British and U.S. - ATA system)</h4></div>
+              <div class="panel-body mai-end">
+                <form method = "POST">
+                  <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>pica</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+					<div class="col-sm-3">
+					 <label>point [PostScript] (pt)</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+
+				   <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>pica [PostScript]</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+					<div class="col-sm-3">
+					 <label>pixel (px)</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+
+				   <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>point (pt)</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+					<div class="col-sm-3">
+					 <label>twip</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
+              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Typographical (Europe - Didot system)</h4></div>
+              <div class="panel-body mai-end">
+                <form method = "POST">
+                  <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>cicero</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+					<div class="col-sm-3">
+					 <label>point (pt)</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
+              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>European footwear unit</h4></div>
+              <div class="panel-body mai-end">
+                <form method = "POST">
+                  <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>Paris point</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
+              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Astronomical</h4></div>
+              <div class="panel-body mai-end">
+                <form method = "POST">
+                  <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>red shift (z)</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+					<div class="col-sm-3">
+					 <label>astronomical unit (au)</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+
+				   <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>parsec (pc)</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+					<div class="col-sm-3">
+					 <label>light minute</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+
+				   <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>light year</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+					<div class="col-sm-3">
+					 <label>light second</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
+              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Grace Hopper's units of distance</h4></div>
+				<div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
+				<span class="" >Grace Hopper is famous for her nanoseconds visual aid. People used to ask her why satellite communication took so long. She started handing out pieces of wire that were just under one foot long (11.80 inches) - the distance that light travels in one nanosecond. She also passed out packets of pepper, calling the individual grains of ground pepper picoseconds. She also used these aids to illustrate why computers had to be small to be fast.</span>
+              </div>
+              <div class="panel-body mai-end">
+                <form method = "POST">
+                  <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>light microsecond</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+					<div class="col-sm-3">
+					 <label>light nanosecond</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+
+				   <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>light picosecond</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
+              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Natural units</h4></div>
+				<div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
+				<span class="" >In physics, natural units are physical units of measurement based only on universal physical constants. The origin of their definition comes only from properties of nature and not from any human construct.</span>
+              </div>
+              <div class="panel-body mai-end">
+                <form method = "POST">
+                  <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <label>Planck length (L)</label>
+					</div>
+                    <div class="col-sm-3">
+                      <input type="text" class="boots_form-control form-control-xs">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
 		  </div>
 		
       

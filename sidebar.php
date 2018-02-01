@@ -1,5 +1,6 @@
-<div class="col-md-3">
+		<div class="col-md-3">
 			<div class="panel">
+			 <div class="panel-subtitle text-center" style="padding:10px;font-size:16px;"><a href="javascript:void(0);"><i class="icon s7-home">Conversion Home Page</i></a></div>
 			  <div class="panel-heading">All converters:</div>
 			  <div class="pricing-table-price panel-subtitle panel-heading-divider" style="padding-left:15px;">Basic</div>
 			  <div class="panel-body">
