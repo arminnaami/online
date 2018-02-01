@@ -61,13 +61,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">kilotonne</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">carat&nbsp;(ct)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -76,28 +76,28 @@
 					 <label class="col-3 col-lg-2 col-form-label">tonne</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">gram&nbsp;(g)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
 				  <div class="form-group inline row">
 					<div class="col-sm-3">
-					 <label class="col-3 col-lg-2 col-form-label">kilonewton (on&nbsp;Earth&nbsp;surface)&nbsp;(kN)</label>
+					 <label class="col-3 col-lg-2 col-form-label">kilonewton (kN)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">centigram</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -106,13 +106,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">centner</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">milligram&nbsp;(mg)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -121,28 +121,28 @@
 					 <label class="col-3 col-lg-2 col-form-label">kilogram&nbsp;(kg)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">microgram&nbsp;(mcg)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
 				 <div class="form-group inline row">
 					<div class="col-sm-3">
-					 <label class="col-3 col-lg-2 col-form-label">newton (on&nbsp;Earth&nbsp;surface)&nbsp;(N)</label>
+					 <label class="col-3 col-lg-2 col-form-label">newton (N)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
-					 <label class="col-3 col-lg-2 col-form-label">atomic&nbsp;mass&nbsp;unit&nbsp;(amu)</label>
+					 <label class="col-3 col-lg-2 col-form-label">atomic&nbsp;mass unit&nbsp;(amu)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                  </div>
                 </form>
@@ -158,13 +158,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">long&nbsp;ton&nbsp;(UK)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">stone&nbsp;(st)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -173,13 +173,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">short&nbsp;ton&nbsp;(US)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">stone,&nbsp;pounds, and&nbsp;ounces (X&nbsp;st&nbsp;Y&nbsp;lbs&nbsp;Z&nbsp;oz)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -188,13 +188,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">kilopound,kip&nbsp;(mass)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">pound&nbsp;(lb)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -203,13 +203,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">long&nbsp;hundredweight (UK)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">ounce&nbsp;(oz)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -218,13 +218,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">short&nbsp;hundredweight (US)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">dram&nbsp;(dr)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -233,7 +233,7 @@
 					 <label class="col-3 col-lg-2 col-form-label">grain&nbsp;(gr)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                  </div>
                 </form>
@@ -249,13 +249,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">pound</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">carat</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -264,13 +264,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">ounce&nbsp;(ozt)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">grain</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -279,13 +279,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">pennyweight&nbsp;(dwt)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">mite</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -294,7 +294,7 @@
 					 <label class="col-3 col-lg-2 col-form-label">doite</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
                 </form>
@@ -310,13 +310,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">pound</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">dram</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -325,13 +325,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">ounce</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">scruple</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -340,7 +340,7 @@
 					 <label class="col-3 col-lg-2 col-form-label">grain</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
                 </form>
@@ -356,7 +356,7 @@
 					 <label class="col-3 col-lg-2 col-form-label">Planck&nbsp;mass&nbsp;(M)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
                 </form>
@@ -372,13 +372,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">kan,&nbsp;kanme</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">hyakume</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -387,13 +387,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">kin</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">monnme</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -402,7 +402,7 @@
 					 <label class="col-3 col-lg-2 col-form-label">fun</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
                 </form>
@@ -418,13 +418,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">dan</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">fen</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -433,13 +433,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">jin</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">li</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -448,13 +448,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">liang</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">hao</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -463,13 +463,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">qian</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">si</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -478,7 +478,7 @@
 					 <label class="col-3 col-lg-2 col-form-label">hu</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
                 </form>
@@ -494,13 +494,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">dan</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">fen</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -509,13 +509,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">jin</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">li</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -524,13 +524,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">liang</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">hao</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -539,13 +539,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">qian</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">si</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
                 </form>
@@ -561,13 +561,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">jin</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">fen</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -576,13 +576,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">liang</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">li</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -591,13 +591,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">qian</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">hao</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
                 </form>
@@ -613,13 +613,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">hap</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">salueng</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -628,13 +628,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">chang</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">fueang</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -643,13 +643,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">tamlueng</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">seek</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -658,13 +658,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">baht</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">siao/pai</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -673,13 +673,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">baht&nbsp;in gold&nbsp;trading</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">ath</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -688,13 +688,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">mayon/mayong</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">solos</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -703,7 +703,7 @@
 					 <label class="col-3 col-lg-2 col-form-label">bia</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
                 </form>
@@ -719,13 +719,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">picul&nbsp;(tam)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">candareen&nbsp;(fan)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -734,13 +734,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">catty&nbsp;(kan)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">tael&nbsp;troy</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -749,13 +749,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">tael&nbsp;(leung)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">mace&nbsp;troy</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
 
@@ -764,13 +764,13 @@
 					 <label class="col-3 col-lg-2 col-form-label">mace&nbsp;(tsin)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
 					<div class="col-sm-3">
 					 <label class="col-3 col-lg-2 col-form-label">candareen&nbsp;troy</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="form-control">
+                      <input type="text" class="form-control form-control-xs">
                     </div>
                   </div>
                 </form>
