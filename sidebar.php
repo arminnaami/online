@@ -4,8 +4,8 @@
 			  <div class="pricing-table-price panel-subtitle panel-heading-divider" style="padding-left:15px;">Basic</div>
 			  <div class="panel-body">
 				<ul>
-				  <li><a href="javascript:void(0);">Mass and Weight</a></li>
-				  <li><a href="javascript:void(0);">Distance and Length</a></li>
+				  <li><a href="weight_mass_converter.php">Mass and Weight</a></li>
+				  <li><a href="distance_length.php">Distance and Length</a></li>
 				  <li><a href="javascript:void(0);">Capacity and Volume</a></li>
 				  <li><a href="javascript:void(0);">Area</a></li>
 				  <li><a href="javascript:void(0);">Speed</a></li>
