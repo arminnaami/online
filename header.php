@@ -22,39 +22,40 @@
                   </a>
 
 				  <ul class="mai-nav-tabs-sub mai-sub-nav nav">
+					<li class="nav-item">
+                      <a href="index.php" class="nav-link">
+                        <span class="name">Home
+                        </span>
+                      </a>
+                    </li>
+
                     <li class="nav-item">
-                      <a href="form-elements.php" class="nav-link active">
-                        <span class="name">Elements
+                      <a href="hscode.php" class="nav-link active">
+                        <span class="name">Search HS Codes
                         </span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="form-validation.php" class="nav-link">
-                        <span class="name">Validation
+                      <a href="weight_metric.php" class="nav-link">
+                        <span class="name">Convert Weight Mass
                         </span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="form-masks.php" class="nav-link">
-                        <span class="name">Masks
+                      <a href="length_dist_metric.php" class="nav-link">
+                        <span class="name">Convert Length Distance
                         </span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="form-multiselect.php" class="nav-link">
-                        <span class="name">Multiselect
+                      <a href="volume_metric.php" class="nav-link">
+                        <span class="name">Convert Capacity & Volume
                         </span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="form-wizard.php" class="nav-link">
-                        <span class="name">Wizard
-                        </span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="form-upload.php" class="nav-link">
-                        <span class="name">Upload
+                      <a href="temp_convert.php" class="nav-link">
+                        <span class="name">Convert Temperature
                         </span>
                       </a>
                     </li>
