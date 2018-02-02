@@ -63,7 +63,7 @@
 				
 				<li class="nav-item parent open" style="float:right;">
                   <a href="#" role="button" class="nav-link" style="background:none;">
-                    <img src="images/images.png" style="height:70px;width:100%;" class="img-responsive">
+                    <img src="images/images.png" style="width:100%;" class="img-responsive">
 					<div class="clearfix"></div>
                   </a>
 				</li>
