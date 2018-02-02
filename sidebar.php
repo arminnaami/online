@@ -1,8 +1,6 @@
 		<div class="col-md-3">
 			<div class="panel">
-			 <div class="panel-subtitle text-center" style="padding:10px;font-size:16px;"><a href="javascript:void(0);"><i class="icon s7-home">Conversion Home Page</i></a></div>
-			  <div class="panel-heading">All converters:</div>
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Convert Weight and Mass Units Instantly</div>
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center" style="padding:10px;">Convert Weight and Mass</div>
 			  <div class="panel-body">
 				<ul>
 				  <li><a href="weight_mass_converter.php">Metric</a></li>
@@ -18,7 +16,7 @@
 				  <li><a href="temperature.php">Hong Kong</a></li>
 				</ul>
 			  </div>
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Convert Length and Distance Units Instantly</div>
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Convert Length and Distance</div>
 			  <div class="panel-body">
 				<ul>
 				  <li><a href="javascript:void(0);">Metric</a></li>
@@ -45,7 +43,7 @@
 				  <li><a href="javascript:void(0);">Natural units</a></li>
 				</ul>
 			  </div>
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Convert Capacity and Volume Units Instantly</div>
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Convert Capacity and Volume</div>
 			  <div class="panel-body">
 				<ul>
 				  <li><a href="javascript:void(0);">Metric</a></li>
@@ -67,10 +65,10 @@
 				  <li><a href="javascript:void(0);">Thai units</a></li>
 				</ul>
 			  </div>
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider" style="padding-left:15px;">Fahrenheit (&deg;F), Celsius (&deg;C) and More.<br>All Scales Temperature Converter.</div>
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Fahrenheit, Celsius and More</div>
 			  <div class="panel-body">
 				<ul>
-				  <li><a href="javascript:void(0);">Temperature scale conversion</a></li>
+				  <li><a href="javascript:void(0);">Temperature conversion</a></li>
 				  <li><a href="javascript:void(0);">Historical temperature scales</a></li>
 				</ul>
 			  </div>
