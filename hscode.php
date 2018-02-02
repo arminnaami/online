@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="images/shortcut.png">
+    <link rel="shortcut icon" href="images/favicon2.png">
     <title>HS Code | Download Online Free</title>
 	<?php include("metalinks.php");?>
     <link rel="stylesheet" type="text/css" href="css/select2.min.css"/>
@@ -35,9 +35,12 @@
   <body>
 	<div class="mai-wrapper">
 	<?php include("header.php");?>
-	  <div class="main-content container">
-        <!--Basic forms-->
-        <!--Basic Elements-->
+	  <div class="main-content container" style="margin-top:-25px;">
+
+		<div class="col-md-12" style="background:white;height:100px;padding:10px;background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);margin-bottom:20px;">
+			<h1 style="text-align:center;color:white;font-weight:bold;padding:25px;">Ad Block</h1>
+		</div>
+
 	    <div class="row">
 		  <div class="col-md-12">
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
@@ -112,6 +115,11 @@
 		  </div>
 
 		</div>
+
+		<div class="col-md-12" style="background:white;height:100px;padding:10px;background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);margin-bottom:10px;">
+			<h1 style="text-align:center;color:white;font-weight:bold;padding:25px;">Ad Block</h1>
+		</div>
+
       </div>
     </div>
     <?php include("footer.php");?>

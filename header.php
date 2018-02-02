@@ -1,4 +1,4 @@
-      <nav class="navbar navbar-expand-lg mai-sub-header">
+      <nav class="navbar navbar-expand-lg mai-sub-header" style="border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
         <div class="container">
           <!-- Mega Menu structure-->
           <nav class="navbar navbar-expand-md ">
@@ -62,11 +62,12 @@
                   </ul>
                 </li>
 				
-				<li class="nav-item parent open" style="float:right;width:70%;">
-                  <a href="#" role="button" class="nav-link" style="background:none;">
+				<li class="nav-item parent open" style="float:right;width:70%;background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
+                  <!--<a href="#" role="button" class="nav-link" style="background:none;">
                     <img src="images/images.png" style="height:70px;width:100%;" class="img-responsive">
 					<div class="clearfix"></div>
-                  </a>
+                  </a>-->
+				  <h1 style="text-align:center;padding-top:15px;">Ad block</h1>
 				</li>
               </ul>
 			  
