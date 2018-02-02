@@ -4,17 +4,17 @@
 			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Convert Weight and Mass</div>
 			  <div class="panel-body">
 				<ul>
-				  <li><a href="weight_mass_converter.php">Metric</a></li>
-				  <li><a href="distance_length.php">Avoirdupois (U.S. / British)</a></li>
-				  <li><a href="capacity_volume.php">Troy</a></li>
-				  <li><a href="javascript:void(0);">Apothecaries</a></li>
-				  <li><a href="javascript:void(0);">Natural units</a></li>
-				  <li><a href="temperature.php">Japanese</a></li>
-				  <li><a href="temperature.php">Chinese units since 1959</a></li>
-				  <li><a href="temperature.php">Chinese units between 1930 and 1959</a></li>
-				  <li><a href="temperature.php">Chinese units of 1915 before 1930</a></li>
-				  <li><a href="temperature.php">Thai units</a></li>
-				  <li><a href="temperature.php">Hong Kong</a></li>
+				  <li><a href="weight_metric.php">Metric</a></li>
+				  <li><a href="weight_avoirdupois.php">Avoirdupois (U.S. / British)</a></li>
+				  <li><a href="weight_troy.php">Troy</a></li>
+				  <li><a href="weight_apothecaries.php">Apothecaries</a></li>
+				  <li><a href="weight_natural_units.php">Natural units</a></li>
+				  <li><a href="weight_japanese.php">Japanese</a></li>
+				  <li><a href="weight_chinese_units_1959.php">Chinese units since 1959</a></li>
+				  <li><a href="weight_chinese_units_1930_and_1959.php">Chinese units between 1930 and 1959</a></li>
+				  <li><a href="weight_Chinese_units_1915_before_1930.php">Chinese units of 1915 before 1930</a></li>
+				  <li><a href="weight_thai.php">Thai units</a></li>
+				  <li><a href="weight_hong.php">Hong Kong</a></li>
 				</ul>
 			  </div>
 			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Convert Length and Distance</div>
