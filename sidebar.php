@@ -2,62 +2,79 @@
 			<div class="panel">
 			 <div class="panel-subtitle text-center" style="padding:10px;font-size:16px;"><a href="javascript:void(0);"><i class="icon s7-home">Conversion Home Page</i></a></div>
 			  <div class="panel-heading">All converters:</div>
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider" style="padding-left:15px;">Basic</div>
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Convert Weight and Mass Units Instantly</div>
 			  <div class="panel-body">
 				<ul>
-				  <li><a href="weight_mass_converter.php">Mass and Weight</a></li>
-				  <li><a href="distance_length.php">Distance and Length</a></li>
-				  <li><a href="capacity_volume.php">Capacity and Volume</a></li>
-				  <li><a href="javascript:void(0);">Area</a></li>
-				  <li><a href="javascript:void(0);">Speed</a></li>
-				  <li><a href="temperature.php">Temperature</a></li>
+				  <li><a href="weight_mass_converter.php">Metric</a></li>
+				  <li><a href="distance_length.php">Avoirdupois (U.S. / British)</a></li>
+				  <li><a href="capacity_volume.php">Troy</a></li>
+				  <li><a href="javascript:void(0);">Apothecaries</a></li>
+				  <li><a href="javascript:void(0);">Natural units</a></li>
+				  <li><a href="temperature.php">Japanese</a></li>
+				  <li><a href="temperature.php">Chinese units since 1959</a></li>
+				  <li><a href="temperature.php">Chinese units between 1930 and 1959</a></li>
+				  <li><a href="temperature.php">Chinese units of 1915 before 1930</a></li>
+				  <li><a href="temperature.php">Thai units</a></li>
+				  <li><a href="temperature.php">Hong Kong</a></li>
 				</ul>
 			  </div>
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider" style="padding-left:15px;">Ancient and Historical</div>
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Convert Length and Distance Units Instantly</div>
 			  <div class="panel-body">
 				<ul>
-				  <li><a href="javascript:void(0);">Historical Weight</a></li>
-				  <li><a href="javascript:void(0);">Historical Length</a></li>
-				  <li><a href="javascript:void(0);">Historical Volume</a></li>
-				  <li><a href="javascript:void(0);">Historical Area</a></li>
+				  <li><a href="javascript:void(0);">Metric</a></li>
+				  <li><a href="javascript:void(0);">The American System of Measures (US Customary Units)</a></li>
+				  <li><a href="javascript:void(0);">British (Imperial) Measure</a></li>
+				  <li><a href="javascript:void(0);">US Surveyors' Measure</a></li>
+				  <li><a href="javascript:void(0);">International Nautical Measure</a></li>
+				  <li><a href="javascript:void(0);">US Nautical Measure</a></li>
+				  <li><a href="javascript:void(0);">British (Imperial) Nautical Measure</a></li>
+				  <li><a href="javascript:void(0);">Spanish Customary Units Still In Use Today</a></li>
+				  <li><a href="javascript:void(0);">Japanese</a></li>
+				  <li><a href="javascript:void(0);">Chinese units of 1930</a></li>
+				  <li><a href="javascript:void(0);">Chinese units of 1915</a></li>
+				  <li><a href="javascript:void(0);">Hong Kong units</a></li>
+				  <li><a href="javascript:void(0);">Thai units</a></li>
+				  <li><a href="javascript:void(0);">Optical</a></li>
+				  <li><a href="javascript:void(0);">Geographical (German)</a></li>
+				  <li><a href="javascript:void(0);">Computer Equipment</a></li>
+				  <li><a href="javascript:void(0);">Typographical (British and U.S. - ATA system)</a></li>
+				  <li><a href="javascript:void(0);">Typographical (Europe - Didot system)</a></li>
+				  <li><a href="javascript:void(0);">European footwear unit</a></li>
+				  <li><a href="javascript:void(0);">Astronomical</a></li>
+				  <li><a href="javascript:void(0);">Grace Hopper's units of distance</a></li>
+				  <li><a href="javascript:void(0);">Natural units</a></li>
 				</ul>
 			  </div>
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider" style="padding-left:15px;">Special</div>
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Convert Capacity and Volume Units Instantly</div>
 			  <div class="panel-body">
 				<ul>
-				  <li><a href="javascript:void(0);">Fuel Economy</a></li>
-				  <li><a href="javascript:void(0);">Cooking</a></li>
-				  <li><a href="javascript:void(0);">Food Price</a></li>
-				  <li><a href="javascript:void(0);">Weight to Volume</a></li>
-				  <li><a href="javascript:void(0);">Fractions and Percent</a></li>
-				  <li><a href="javascript:void(0);">Numerals and Radix</a></li>
-				  <li><a href="javascript:void(0);">Currency Rates</a></li>
-				  <li><a href="javascript:void(0);">Shoe Sizes</a></li>
+				  <li><a href="javascript:void(0);">Metric</a></li>
+				  <li><a href="javascript:void(0);">U.S. Liquid Measure</a></li>
+				  <li><a href="javascript:void(0);">U.S. Dry Measure</a></li>
+				  <li><a href="javascript:void(0);">British Imperial Liquid And Dry</a></li>
+				  <li><a href="javascript:void(0);">British and U.S. derivatives of length units</a></li>
+				  <li><a href="javascript:void(0);">English wine cask units</a></li>
+				  <li><a href="javascript:void(0);">Cooking (U.S.)</a></li>
+				  <li><a href="javascript:void(0);">Cooking (International)</a></li>
+				  <li><a href="javascript:void(0);">Cooking (Australian)</a></li>
+				  <li><a href="javascript:void(0);">Natural units</a></li>
+				  <li><a href="javascript:void(0);">Astronomical</a></li>
+				  <li><a href="javascript:void(0);">Ship tonnage measurements</a></li>
+				  <li><a href="javascript:void(0);">Lumber measure</a></li>
+				  <li><a href="javascript:void(0);">Japanese</a></li>
+				  <li><a href="javascript:void(0);">Chinese units of 1930</a></li>
+				  <li><a href="javascript:void(0);">Chinese units of 1915</a></li>
+				  <li><a href="javascript:void(0);">Thai units</a></li>
 				</ul>
 			  </div>
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider" style="padding-left:15px;">Engineering</div>
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider" style="padding-left:15px;">Fahrenheit (&deg;F), Celsius (&deg;C) and More.<br>All Scales Temperature Converter.</div>
 			  <div class="panel-body">
 				<ul>
-				  <li><a href="javascript:void(0);">Time</a></li>
-				  <li><a href="javascript:void(0);">Acceleration</a></li>
-				  <li><a href="javascript:void(0);">Density</a></li>
-				  <li><a href="javascript:void(0);">Stress and Pressure</a></li>
-				  <li><a href="javascript:void(0);">Energy and Work</a></li>
-				  <li><a href="javascript:void(0);">Power</a></li>
-				  <li><a href="javascript:void(0);">Force</a></li>
-				  <li><a href="javascript:void(0);">Circular measure</a></li>
-				  <li><a href="javascript:void(0);">Wire gauge</a></li>
-				  <li><a href="javascript:void(0);">Angular velocity</a></li>
-				  <li><a href="javascript:void(0);">Torque</a></li>
-				  <li><a href="javascript:void(0);">Temperature increment</a></li>
-				  <li><a href="javascript:void(0);">Flow rate by volume</a></li>
-				  <li><a href="javascript:void(0);">Flow rate by mass</a></li>
-				  <li><a href="javascript:void(0);">Illuminance</a></li>
-				  <li><a href="javascript:void(0);">Radiation</a></li>
-				  <li><a href="javascript:void(0);">Radioactivity</a></li>
+				  <li><a href="javascript:void(0);">Temperature scale conversion</a></li>
+				  <li><a href="javascript:void(0);">Historical temperature scales</a></li>
 				</ul>
 			  </div>
-			   <div class="pricing-table-price panel-subtitle panel-heading-divider" style="padding-left:15px;">Computer</div>
+			  <!-- <div class="pricing-table-price panel-subtitle panel-heading-divider" style="padding-left:15px;">Computer</div>
 			  <div class="panel-body">
 				<ul>
 				  <li><a href="javascript:void(0);">Computer storage</a></li>
@@ -87,6 +104,6 @@
 				</ul>
 			  </div>
 			   <div class="panel-heading-divider"></div>
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider" style="padding-left:15px;"><a href="javascript:void(0);">Our privacy policy</a></div>
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider" style="padding-left:15px;"><a href="javascript:void(0);">Our privacy policy</a></div>-->
 			</div>
 	    </div>
