@@ -6,11 +6,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="images/favicon.png">
-    <title>Download Online Free</title>
+    <title>Dashboard | Download Online Free</title>
     <?php include("metalinks.php");?> 
+	<link type="text/css" href="css/little-fox.css" rel="stylesheet"> 
   </head>
   <body>
-	<?php include("header_top.php");?>
 	<div class="mai-wrapper">
 	<?php include("header.php");?>
 	<div class="main-content container">

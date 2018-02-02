@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="images/favicon.png">
-    <title>Download Online Free</title>
+    <title>Geographical (German) | Download Online Free</title>
 	<?php include("metalinks.php");?>
     <link rel="stylesheet" type="text/css" href="css/select2.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.min.css"/>
