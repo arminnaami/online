@@ -7,10 +7,10 @@
 				<ul>
 				  <li><a href="weight_mass_converter.php">Mass and Weight</a></li>
 				  <li><a href="distance_length.php">Distance and Length</a></li>
-				  <li><a href="javascript:void(0);">Capacity and Volume</a></li>
+				  <li><a href="capacity_volume.php">Capacity and Volume</a></li>
 				  <li><a href="javascript:void(0);">Area</a></li>
 				  <li><a href="javascript:void(0);">Speed</a></li>
-				  <li><a href="javascript:void(0);">Temperature</a></li>
+				  <li><a href="temperature.php">Temperature</a></li>
 				</ul>
 			  </div>
 			  <div class="pricing-table-price panel-subtitle panel-heading-divider" style="padding-left:15px;">Ancient and Historical</div>

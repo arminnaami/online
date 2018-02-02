@@ -47,14 +47,14 @@
             
 		<div class="col-md-6">
 		   <div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Convert Weight and Mass Units Instantly</h4></div>
+              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Convert Weight and Mass Units Instantly</h4></div>
               <div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
 				<span class="" >This converter features units that are still used today. There is also a special converter for historical units of weight you might want to visit for ancient, medieval and other old units that are no longer used.</span>
               </div>
             </div>
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Metric</h4></div>
+              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Metric</h4></div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
@@ -151,7 +151,7 @@
             </div>
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Avoirdupois (U.S. / British)</h4></div>
+              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Avoirdupois (U.S. / British)</h4></div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
@@ -242,7 +242,7 @@
             </div>
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Troy</h4></div>
+              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Troy</h4></div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
@@ -303,7 +303,7 @@
             </div>
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Apothecaries</h4></div>
+              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Apothecaries</h4></div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
@@ -349,7 +349,7 @@
             </div>
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Natural units</h4></div>
+              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Natural units</h4></div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
@@ -365,7 +365,7 @@
             </div>
 			
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Japanese</h4></div>
+              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Japanese</h4></div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
@@ -411,7 +411,7 @@
             </div>
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Chinese units since 1959</h4></div>
+              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Chinese units since 1959</h4></div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
@@ -487,7 +487,7 @@
             </div>
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Chinese units between 1930 and 1959</h4></div>
+              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Chinese units between 1930 and 1959</h4></div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
@@ -554,7 +554,7 @@
             </div>
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Chinese units of 1915 before 1930</h4></div>
+              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Chinese units of 1915 before 1930</h4></div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
@@ -606,7 +606,7 @@
             </div>
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Thai units</h4></div>
+              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Thai units</h4></div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
@@ -712,7 +712,7 @@
             </div>
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Hong Kong</h4></div>
+              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Hong Kong</h4></div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
