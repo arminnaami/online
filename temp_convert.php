@@ -45,42 +45,28 @@
           <div class="col-md-6">
             <div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;">
-                <h4>Convert Capacity and Volume Units Instantly</h4>
-              </div>
-              <div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
-                <span class="" >This converter features units that are still used today. There is also a special converter for historical units of volume you might want to visit for ancient, medieval and other old units that are no longer used.
-                </span>
+                <h4>Fahrenheit (&deg;F), Celsius (&deg;C) and More. All Scales Temperature Converter.</h4>
               </div>
             </div>
+
             <div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;">
-                <h4>Metric</h4>
+                <h4>Temperature scale conversion</h4>
+              </div>
+			  <div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
+                <span class="" >Please be aware there is the absolute zero - the coldest temperature possible in the Universe. It is zero kelvin (-459.67&deg;F, -273.15&deg;C).</span>
               </div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
                     <div class="col-sm-3">
-                      <label>cubic kilometer (km&sup3;)</label>
+                      <label>degrees Celsius (&deg;C)</label>
                     </div>
                     <div class="col-sm-3">
                       <input type="text" class="boots_form-control form-control-xs">
                     </div>
                     <div class="col-sm-3">
-                      <label>decaliter</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                  <div class="form-group inline row">
-                    <div class="col-sm-3">
-                      <label>cubic meter (m&sup3;)</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                    <div class="col-sm-3">
-                      <label>liter (l)</label>
+                      <label>kelvin (K)</label>
                     </div>
                     <div class="col-sm-3">
                       <input type="text" class="boots_form-control form-control-xs">
@@ -88,27 +74,13 @@
                   </div>
                   <div class="form-group inline row">
                     <div class="col-sm-3">
-                      <label>cubic decimeter (dm&sup3;)</label>
+                      <label>degrees Fahrenheit (&deg;F)</label>
                     </div>
                     <div class="col-sm-3">
                       <input type="text" class="boots_form-control form-control-xs">
                     </div>
                     <div class="col-sm-3">
-                      <label>deciliter (dl)</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                  <div class="form-group inline row">
-                    <div class="col-sm-3">
-                      <label>cubic centimeter (cc)</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                    <div class="col-sm-3">
-                      <label>centiliter (cl)</label>
+                      <label>degrees Reaumur (&deg;Re)</label>
                     </div>
                     <div class="col-sm-3">
                       <input type="text" class="boots_form-control form-control-xs">
@@ -116,27 +88,7 @@
                   </div>
                   <div class="form-group inline row">
                     <div class="col-sm-3">
-                      <label>cubic millimeter (mm&sup3;)</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                    <div class="col-sm-3">
-                      <label>milliliter (ml)</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                  <div class="form-group inline row">
-                    <div class="col-sm-3">
-                      <label>hectoliter (hl)</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                    <div class="col-sm-3">
-                      <label>microliter (&micro;l)</label>
+                      <label>Planck temperature</label>
                     </div>
                     <div class="col-sm-3">
                       <input type="text" class="boots_form-control form-control-xs">
@@ -146,6 +98,7 @@
               </div>
             </div>
 
+          </div>
           <div class="col-md-3" style="padding:0px;">
             <?php for($i=0;$i<8;$i++){?>
             <div class="pricing-table">

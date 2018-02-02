@@ -52,35 +52,26 @@
                 </span>
               </div>
             </div>
-            <div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
+			
+ 
+			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;">
-                <h4>Metric</h4>
+                <h4>Astronomical
+                </h4>
               </div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
                     <div class="col-sm-3">
-                      <label>cubic kilometer (km&sup3;)</label>
+                      <label>cubic parsec (pc&sup3;)
+                      </label>
                     </div>
                     <div class="col-sm-3">
                       <input type="text" class="boots_form-control form-control-xs">
                     </div>
                     <div class="col-sm-3">
-                      <label>decaliter</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                  <div class="form-group inline row">
-                    <div class="col-sm-3">
-                      <label>cubic meter (m&sup3;)</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                    <div class="col-sm-3">
-                      <label>liter (l)</label>
+                      <label>cubic light minute
+                      </label>
                     </div>
                     <div class="col-sm-3">
                       <input type="text" class="boots_form-control form-control-xs">
@@ -88,55 +79,15 @@
                   </div>
                   <div class="form-group inline row">
                     <div class="col-sm-3">
-                      <label>cubic decimeter (dm&sup3;)</label>
+                      <label>cubic light year
+                      </label>
                     </div>
                     <div class="col-sm-3">
                       <input type="text" class="boots_form-control form-control-xs">
                     </div>
                     <div class="col-sm-3">
-                      <label>deciliter (dl)</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                  <div class="form-group inline row">
-                    <div class="col-sm-3">
-                      <label>cubic centimeter (cc)</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                    <div class="col-sm-3">
-                      <label>centiliter (cl)</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                  <div class="form-group inline row">
-                    <div class="col-sm-3">
-                      <label>cubic millimeter (mm&sup3;)</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                    <div class="col-sm-3">
-                      <label>milliliter (ml)</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                  <div class="form-group inline row">
-                    <div class="col-sm-3">
-                      <label>hectoliter (hl)</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                    <div class="col-sm-3">
-                      <label>microliter (&micro;l)</label>
+                      <label>cubic light second
+                      </label>
                     </div>
                     <div class="col-sm-3">
                       <input type="text" class="boots_form-control form-control-xs">
@@ -146,8 +97,9 @@
               </div>
             </div>
 
+		 </div>
           <div class="col-md-3" style="padding:0px;">
-            <?php for($i=0;$i<8;$i++){?>
+            <?php for($i=0;$i<3;$i++){?>
             <div class="pricing-table">
               <div class="pricing-table-title">Basic
               </div>

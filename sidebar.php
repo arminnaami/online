@@ -1,6 +1,7 @@
 		<div class="col-md-3">
 			<div class="panel">
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center" style="padding:10px;">Convert Weight and Mass</div>
+			 <div class="panel-subtitle text-center" style="padding:10px;font-size:16px;"></div>
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Convert Weight and Mass</div>
 			  <div class="panel-body">
 				<ul>
 				  <li><a href="weight_mass_converter.php">Metric</a></li>
@@ -46,30 +47,30 @@
 			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Convert Capacity and Volume</div>
 			  <div class="panel-body">
 				<ul>
-				  <li><a href="javascript:void(0);">Metric</a></li>
-				  <li><a href="javascript:void(0);">U.S. Liquid Measure</a></li>
-				  <li><a href="javascript:void(0);">U.S. Dry Measure</a></li>
-				  <li><a href="javascript:void(0);">British Imperial Liquid And Dry</a></li>
-				  <li><a href="javascript:void(0);">British and U.S. derivatives of length units</a></li>
-				  <li><a href="javascript:void(0);">English wine cask units</a></li>
-				  <li><a href="javascript:void(0);">Cooking (U.S.)</a></li>
-				  <li><a href="javascript:void(0);">Cooking (International)</a></li>
-				  <li><a href="javascript:void(0);">Cooking (Australian)</a></li>
-				  <li><a href="javascript:void(0);">Natural units</a></li>
-				  <li><a href="javascript:void(0);">Astronomical</a></li>
-				  <li><a href="javascript:void(0);">Ship tonnage measurements</a></li>
-				  <li><a href="javascript:void(0);">Lumber measure</a></li>
-				  <li><a href="javascript:void(0);">Japanese</a></li>
-				  <li><a href="javascript:void(0);">Chinese units of 1930</a></li>
-				  <li><a href="javascript:void(0);">Chinese units of 1915</a></li>
-				  <li><a href="javascript:void(0);">Thai units</a></li>
+				  <li><a href="volume_metric.php">Metric</a></li>
+				  <li><a href="volume_us_liquid_measure.php">U.S. Liquid Measure</a></li>
+				  <li><a href="volume_us_dry_measure.php">U.S. Dry Measure</a></li>
+				  <li><a href="volume_british_imperial.php">British Imperial Liquid And Dry</a></li>
+				  <li><a href="volume_british_derivatives.php">British and U.S. derivatives of length units</a></li>
+				  <li><a href="volume_english_wine_cask.php">English wine cask units</a></li>
+				  <li><a href="volume_cooking_us.php">Cooking (U.S.)</a></li>
+				  <li><a href="volume_cooking_international.php">Cooking (International)</a></li>
+				  <li><a href="volume_cooking_australian.php">Cooking (Australian)</a></li>
+				  <li><a href="volume_natural_units.php">Natural units</a></li>
+				  <li><a href="volume_astronomical.php">Astronomical</a></li>
+				  <li><a href="volume_ship_tonnage.php">Ship tonnage measurements</a></li>
+				  <li><a href="volume_lumber.php">Lumber measure</a></li>
+				  <li><a href="volume_japanese.php">Japanese</a></li>
+				  <li><a href="volume_chinese_units_1930.php">Chinese units of 1930</a></li>
+				  <li><a href="volume_chinese_units_1915.php">Chinese units of 1915</a></li>
+				  <li><a href="volume_thai.php">Thai units</a></li>
 				</ul>
 			  </div>
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Fahrenheit, Celsius and More</div>
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Fahrenheit, Celsius and more</div>
 			  <div class="panel-body">
 				<ul>
-				  <li><a href="javascript:void(0);">Temperature conversion</a></li>
-				  <li><a href="javascript:void(0);">Historical temperature scales</a></li>
+				  <li><a href="temp_convert.php">Temperature conversion</a></li>
+				  <li><a href="temp_historical.php">Historical temperature scales</a></li>
 				</ul>
 			  </div>
 			  <!-- <div class="pricing-table-price panel-subtitle panel-heading-divider" style="padding-left:15px;">Computer</div>
