@@ -1,7 +1,7 @@
 		<div class="col-md-3">
 			<div class="panel">
 			 <div class="panel-subtitle text-center" style="padding:10px;font-size:16px;"></div>
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Convert Weight and Mass</div>
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-left">Convert Weight and Mass</div>
 			  <div class="panel-body">
 				<ul>
 				  <li><a href="weight_metric.php">Metric</a></li>
@@ -17,7 +17,7 @@
 				  <li><a href="weight_hong.php">Hong Kong</a></li>
 				</ul>
 			  </div>
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Convert Length and Distance</div>
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-left">Convert Length and Distance</div>
 			  <div class="panel-body">
 				<ul>
 				  <li><a href="length_dist_metric.php">Metric</a></li>
@@ -44,7 +44,7 @@
 				  <li><a href="length_dist_natural_units.php">Natural units</a></li>
 				</ul>
 			  </div>
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Convert Capacity and Volume</div>
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-left">Convert Capacity and Volume</div>
 			  <div class="panel-body">
 				<ul>
 				  <li><a href="volume_metric.php">Metric</a></li>
@@ -66,7 +66,7 @@
 				  <li><a href="volume_thai.php">Thai units</a></li>
 				</ul>
 			  </div>
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-center">Fahrenheit, Celsius and more</div>
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-left">Fahrenheit, Celsius and more</div>
 			  <div class="panel-body">
 				<ul>
 				  <li><a href="temp_convert.php">Temperature conversion</a></li>
