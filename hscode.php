@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="images/favicon.png">
-    <title>Download Online Free</title>
+    <link rel="shortcut icon" href="images/shortcut.png">
+    <title>HS Code | Download Online Free</title>
 	<?php include("metalinks.php");?>
     <link rel="stylesheet" type="text/css" href="css/select2.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.min.css"/>
