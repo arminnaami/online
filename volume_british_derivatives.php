@@ -52,7 +52,7 @@
                 </span>
               </div>
             </div>
- <div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
+			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;">
                 <h4>British and U.S. derivatives of length units</h4>
               </div>
@@ -104,40 +104,7 @@
               </div>
             </div>
 		 </div>
-          <div class="col-md-3" style="padding:0px;">
-            <?php for($i=0;$i<3;$i++){?>
-            <div class="pricing-table">
-              <div class="pricing-table-title">Basic
-              </div>
-              <div class="pricing-table-price">
-                <span class="currency">us
-                </span>
-                <span class="value">$8
-                </span>
-              </div>
-              <div class="pricing-table-frecuency">month
-              </div>
-              <div class="panel-divider panel-divider-xl">
-              </div>
-              <ul class="pricing-table-features">
-                <li>
-                  <b>50M
-                  </b> ipsum dolor sit amet
-                </li>
-                <li>
-                  <b>600
-                  </b> tesque sit amet odio elit
-                </li>
-                <li>
-                  <b>Unlimited
-                  </b> Integer felis odio
-                </li>
-              </ul>
-              <a href="#" class="btn btn-primary">Get Started
-              </a>
-            </div>
-            <?php } ?>
-          </div>
+           <?php include("right_sidebar.php");?>
           <!--Date Picker-->
         </div>
       </div>
