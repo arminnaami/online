@@ -14,7 +14,7 @@
             </button>
 
             <div id="mai-navbar-collapse" class="navbar-collapse collapse mai-nav-tabs" style="margin-top:-40px;padding:10px;">
-              <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav" style="width:100%;">
                 <li class="nav-item parent open" >
                   <a href="#" role="button" class="nav-link" style="background:none;height:70px;width:100%;">
                     <img src="images/logodof.png" style="height:70px;">
@@ -61,7 +61,7 @@
                   </ul>
                 </li>
 				
-				<li class="nav-item parent open" style="float:right;">
+				<li class="nav-item parent open" style="float:right;width:70%;">
                   <a href="#" role="button" class="nav-link" style="background:none;">
                     <img src="images/images.png" style="height:70px;width:100%;" class="img-responsive">
 					<div class="clearfix"></div>
