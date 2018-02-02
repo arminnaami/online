@@ -47,7 +47,7 @@
             
 		<div class="col-md-6">
 		   <div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h3>Convert Length and Distance Units Instantly</h3></div>
+              <div class="panel-heading panel-heading-divider" style="padding:7px;margin:0px;"><h4>Convert Length and Distance Units Instantly</h4></div>
               <div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
 				<span class="" >This converter features units that are still used today. There is also a special converter for historical units of length you might want to visit for ancient, medieval and other old units that are no longer used.</span>
               </div>
