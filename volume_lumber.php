@@ -52,35 +52,30 @@
                 </span>
               </div>
             </div>
-            <div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
+			
+ 
+			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;">
-                <h4>Metric</h4>
+                <h4>Lumber measure
+                </h4>
+              </div>
+              <div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
+                <span class="" >These units are sometimes used to measure the volume of lumber in Great Britain, the United States, Canada, Australia and New Zealand. The same units is called board-foot in the U.S. and Canada and super foot or superficial foot in Australia and New Zealand. One board-foot is the volume of a one-foot length of a board one foot wide and one inch thick.
+                </span>
               </div>
               <div class="panel-body mai-end">
                 <form method = "POST">
                   <div class="form-group inline row">
                     <div class="col-sm-3">
-                      <label>cubic kilometer (km&sup3;)</label>
+                      <label>million board-feet (mmfbm, mmbdft, mmbf)
+                      </label>
                     </div>
                     <div class="col-sm-3">
                       <input type="text" class="boots_form-control form-control-xs">
                     </div>
                     <div class="col-sm-3">
-                      <label>decaliter</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                  <div class="form-group inline row">
-                    <div class="col-sm-3">
-                      <label>cubic meter (m&sup3;)</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                    <div class="col-sm-3">
-                      <label>liter (l)</label>
+                      <label>cubic ton of timber
+                      </label>
                     </div>
                     <div class="col-sm-3">
                       <input type="text" class="boots_form-control form-control-xs">
@@ -88,27 +83,15 @@
                   </div>
                   <div class="form-group inline row">
                     <div class="col-sm-3">
-                      <label>cubic decimeter (dm&sup3;)</label>
+                      <label>cord
+                      </label>
                     </div>
                     <div class="col-sm-3">
                       <input type="text" class="boots_form-control form-control-xs">
                     </div>
                     <div class="col-sm-3">
-                      <label>deciliter (dl)</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                  <div class="form-group inline row">
-                    <div class="col-sm-3">
-                      <label>cubic centimeter (cc)</label>
-                    </div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                    <div class="col-sm-3">
-                      <label>centiliter (cl)</label>
+                      <label>stere
+                      </label>
                     </div>
                     <div class="col-sm-3">
                       <input type="text" class="boots_form-control form-control-xs">
@@ -116,13 +99,15 @@
                   </div>
                   <div class="form-group inline row">
                     <div class="col-sm-3">
-                      <label>cubic millimeter (mm&sup3;)</label>
+                      <label>thousand board-feet (mfbm, mbdft, mbf)
+                      </label>
                     </div>
                     <div class="col-sm-3">
                       <input type="text" class="boots_form-control form-control-xs">
                     </div>
                     <div class="col-sm-3">
-                      <label>milliliter (ml)</label>
+                      <label>hoppus foot, hoppus cube (h ft)
+                      </label>
                     </div>
                     <div class="col-sm-3">
                       <input type="text" class="boots_form-control form-control-xs">
@@ -130,13 +115,15 @@
                   </div>
                   <div class="form-group inline row">
                     <div class="col-sm-3">
-                      <label>hectoliter (hl)</label>
+                      <label>hoppus ton (HT)
+                      </label>
                     </div>
                     <div class="col-sm-3">
                       <input type="text" class="boots_form-control form-control-xs">
                     </div>
                     <div class="col-sm-3">
-                      <label>microliter (&micro;l)</label>
+                      <label>boardfoot, board-foot (fbmm, bdft, bf)
+                      </label>
                     </div>
                     <div class="col-sm-3">
                       <input type="text" class="boots_form-control form-control-xs">
@@ -145,7 +132,8 @@
                 </form>
               </div>
             </div>
-          </div>
+
+		 </div>
           <div class="col-md-3" style="padding:0px;">
             <?php for($i=0;$i<3;$i++){?>
             <div class="pricing-table">
