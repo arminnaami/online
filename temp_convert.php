@@ -123,38 +123,39 @@
                        );
     </script>
 	<script>
-		function celzz(valNum) {
-		  var convert_cel_kel = parseFloat(valNum)+273.15;
+		function celzz(celsi) {
+		  var convert_cel_kel = parseFloat(celsi)+273.15;
 			$('.kelvin').val(convert_cel_kel);
-		  var convert_cel_fah = (parseFloat(valNum)*1.8)+32;
+		  var convert_cel_fah = (parseFloat(celsi)*1.8)+32;
 			$('.Fahrenheit').val(convert_cel_fah);
-		  var convert_cel_reau = parseFloat(valNum) * 0.80000;
+		  var convert_cel_reau = parseFloat(celsi) * 0.80000;
 			$('.Reaumur').val(convert_cel_reau);
 			var power = Math.pow(10,32);
-		  var convert_cel_planck = parseFloat(valNum)+ 273.15 / (1.41683385 * power);
+		  var convert_cel_planck = parseFloat(celsi)+ 273.15 / (1.41683385 * power);
 			$('.Planck').val(convert_cel_planck);
 		}
 
-		function kelzz(valNum) {
-		  var convert_kel_cel = parseFloat(valNum)-273.15;
+		function kelzz(kelv) {
+		  var convert_kel_cel = parseFloat(kelv)-273.15;
 			$('.Celsius').val(convert_kel_cel);
-		  var convert_kel_fah = ((parseFloat(valNum)-273.15)*1.8)+32;
+		  var convert_kel_fah = ((parseFloat(kelv)-273.15)*1.8)+32;
 			$('.Fahrenheit').val(convert_kel_fah);
-		  var convert_kel_reau = (parseFloat(valNum) - 273.15)* 0.80000;
+		  var convert_kel_reau = (parseFloat(kelv) - 273.15)* 0.80000;
 			$('.Reaumur').val(convert_kel_reau);
 			var power = Math.pow(10,32);
-		  var convert_kel_planck = parseFloat(valNum) / (1.41683385 * power);
+		  var convert_kel_planck = parseFloat(kelv) / (1.41683385 * power);
 			$('.Planck').val(convert_kel_planck);
 		}
-		function fahzz(valNum) {
-		  var convert_fah_cel = (parseFloat(valNum)-32)/1.8;
+		function fahzz(fah) {
+		  var convert_fah_cel = (parseFloat(fah)-32)/1.8;
 			$('.Celsius').val(convert_fah_cel);
-		  var convert_fah_kel = ((parseFloat(valNum)-32)/1.8)+273.15;
+		  var convert_fah_kel = ((parseFloat(fah)-32)/1.8)+273.15;
 			$('.kelvin').val(convert_fah_kel);
-		  var convert_fah_reau = (parseFloat(valNum) - 32)* 0.44444;
+		  var convert_fah_reau = (parseFloat(fah) - 32)* 0.44444;
 			$('.Reaumur').val(convert_fah_reau);
 			var power = Math.pow(10,32);
-		  var convert_fah_planck = parseFloat(valNum) + 459.67 / (2.55030092 * power);
+		  var convert_fah_planck = parseFloat(fah);
+		  alert(convert_fah_planck);
 			$('.Planck').val(convert_fah_planck);
 		}
 	</script>
