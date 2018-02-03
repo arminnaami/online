@@ -31,31 +31,31 @@
 
                     <li class="nav-item">
                       <a href="hscode.php" class="nav-link active">
-                        <span class="name">Search HS Codes
+                        <span class="name">HS Codes
                         </span>
                       </a>
                     </li>
                     <li class="nav-item">
                       <a href="weight_metric.php" class="nav-link">
-                        <span class="name">Convert Weight Mass
+                        <span class="name">Weight Mass
                         </span>
                       </a>
                     </li>
                     <li class="nav-item">
                       <a href="length_dist_metric.php" class="nav-link">
-                        <span class="name">Convert Length Distance
+                        <span class="name">Length Distance
                         </span>
                       </a>
                     </li>
                     <li class="nav-item">
                       <a href="volume_metric.php" class="nav-link">
-                        <span class="name">Convert Capacity & Volume
+                        <span class="name">Capacity & Volume
                         </span>
                       </a>
                     </li>
                     <li class="nav-item">
                       <a href="temp_convert.php" class="nav-link">
-                        <span class="name">Convert Temperature
+                        <span class="name"> Temperature
                         </span>
                       </a>
                     </li>
