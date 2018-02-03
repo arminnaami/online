@@ -62,13 +62,13 @@
                       <label>degrees Celsius (&deg;C)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs Celsius" onkeyup="celzz(this.value);">
                     </div>
                     <div class="col-sm-3">
                       <label>kelvin (K)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs kelvin" onkeyup="kelzz(this.value);">
                     </div>
                   </div>
                   <div class="form-group inline row">
@@ -76,13 +76,13 @@
                       <label>degrees Fahrenheit (&deg;F)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs Fahrenheit" onkeyup="fahzz(this.value);">
                     </div>
                     <div class="col-sm-3">
                       <label>degrees Reaumur (&deg;Re)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs Reaumur" onkeyup="myFunction(this.value);">
                     </div>
                   </div>
                   <div class="form-group inline row">
@@ -90,7 +90,7 @@
                       <label>Planck temperature</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs Planck" onkeyup="myFunction(this.value);">
                     </div>
                   </div>
                 </form>
@@ -122,5 +122,41 @@
       }
                        );
     </script>
+	<script>
+		function celzz(valNum) {
+		  var convert_cel_kel = parseFloat(valNum)+273.15;
+			$('.kelvin').val(convert_cel_kel);
+		  var convert_cel_fah = (parseFloat(valNum)*1.8)+32;
+			$('.Fahrenheit').val(convert_cel_fah);
+		  var convert_cel_reau = parseFloat(valNum) * 0.80000;
+			$('.Reaumur').val(convert_cel_reau);
+			var power = Math.pow(10,32);
+		  var convert_cel_planck = parseFloat(valNum)+ 273.15 / (1.41683385 * power);
+			$('.Planck').val(convert_cel_planck);
+		}
+
+		function kelzz(valNum) {
+		  var convert_kel_cel = parseFloat(valNum)-273.15;
+			$('.Celsius').val(convert_kel_cel);
+		  var convert_kel_fah = ((parseFloat(valNum)-273.15)*1.8)+32;
+			$('.Fahrenheit').val(convert_kel_fah);
+		  var convert_kel_reau = (parseFloat(valNum) - 273.15)* 0.80000;
+			$('.Reaumur').val(convert_kel_reau);
+			var power = Math.pow(10,32);
+		  var convert_kel_planck = parseFloat(valNum) / (1.41683385 * power);
+			$('.Planck').val(convert_kel_planck);
+		}
+		function fahzz(valNum) {
+		  var convert_fah_cel = (parseFloat(valNum)-32)/1.8;
+			$('.Celsius').val(convert_fah_cel);
+		  var convert_fah_kel = ((parseFloat(valNum)-32)/1.8)+273.15;
+			$('.kelvin').val(convert_fah_kel);
+		  var convert_fah_reau = (parseFloat(valNum) - 32)* 0.44444;
+			$('.Reaumur').val(convert_fah_reau);
+			var power = Math.pow(10,32);
+		  var convert_fah_planck = parseFloat(valNum) + 459.67 / (2.55030092 * power);
+			$('.Planck').val(convert_fah_planck);
+		}
+	</script>
   </body>
 </html>
