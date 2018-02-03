@@ -65,7 +65,7 @@
 					 <label>league</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs" onkeyup="myFunction(this.value);">
                     </div>
 					<div class="col-sm-3">
 					 <label>foot (ft)</label>
@@ -208,5 +208,14 @@
       }
     );
     </script>
+
+	<script>
+		function myFunction(event) {
+		var x = event;
+		alert(x);
+		}
+	</script>
+
+
   </body>
 </html>
