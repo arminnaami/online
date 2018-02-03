@@ -2,12 +2,21 @@
 			<div class="panel">
 			 <div class="panel-subtitle text-center" style="font-size:16px;"></div>
 			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-left" style="padding:10px;border-top:1px solid #e6e5e5;background:#fafafa;"><h4>Weight and Mass</h4></div>
-			  <ul style="margin-left:-12px;padding-bottom:20px;">
+			  <ul class="hide_1" style="margin-left:-12px;padding-bottom:0px;">
 				  <li><a href="weight_metric.php">Metric</a></li>
 				  <li><a href="weight_avoirdupois.php">Avoirdupois (U.S. / British)</a></li>
 				  <li><a href="weight_troy.php">Troy</a></li>
 				  <li><a href="weight_apothecaries.php">Apothecaries</a></li>
 				  <li><a href="weight_natural_units.php">Natural units</a></li>
+			  </ul>
+			  <a class="btn btn-secondary btn-block btn_hide_1" style="background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);center;color:white;font-weight:bold;" onclick="show_more_1();">Show More</a>
+			  <ul class="show_1" style="margin-left:-12px;padding-bottom:0px;display:none;">
+				  <li><a href="weight_metric.php">Metric</a></li>
+				  <li><a href="weight_avoirdupois.php">Avoirdupois (U.S. / British)</a></li>
+				  <li><a href="weight_troy.php">Troy</a></li>
+				  <li><a href="weight_apothecaries.php">Apothecaries</a></li>
+				  <li><a href="weight_natural_units.php">Natural units</a></li>
+				  <li><a href="javascript:void(0);">Show More</a></li>
 				  <li><a href="weight_japanese.php">Japanese</a></li>
 				  <li><a href="weight_chinese_units_1959.php">Chinese units since 1959</a></li>
 				  <li><a href="weight_chinese_units_1930_and_1959.php">Chinese units between 1930 and 1959</a></li>
@@ -15,6 +24,7 @@
 				  <li><a href="weight_thai.php">Thai units</a></li>
 				  <li><a href="weight_hong.php">Hong Kong</a></li>
 			  </ul>
+			  <a class="btn btn-secondary btn-block btn_show_1" style="background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);center;color:white;font-weight:bold;display:none;" onclick="show_less_1();">Show Less</a>
 			  
 			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-left" style="padding:10px;border-top:1px solid #e6e5e5;background:#fafafa;"><h4>Length and Distance</h4></div>
 			  <ul style="margin-left:-12px;padding-bottom:20px;">
