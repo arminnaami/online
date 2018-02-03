@@ -1,9 +1,8 @@
 		<div class="col-md-3">
 			<div class="panel">
-			 <div class="panel-subtitle text-center" style="padding:10px;font-size:16px;"></div>
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-left">Convert Weight and Mass</div>
-			  <div class="panel-body">
-				<ul>
+			 <div class="panel-subtitle text-center" style="font-size:16px;"></div>
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-left" style="padding:10px;border-top:1px solid #e6e5e5;background:#fafafa;"><h4>Weight and Mass</h4></div>
+			  <ul style="margin-left:-12px;padding-bottom:20px;">
 				  <li><a href="weight_metric.php">Metric</a></li>
 				  <li><a href="weight_avoirdupois.php">Avoirdupois (U.S. / British)</a></li>
 				  <li><a href="weight_troy.php">Troy</a></li>
@@ -15,11 +14,10 @@
 				  <li><a href="weight_Chinese_units_1915_before_1930.php">Chinese units of 1915 before 1930</a></li>
 				  <li><a href="weight_thai.php">Thai units</a></li>
 				  <li><a href="weight_hong.php">Hong Kong</a></li>
-				</ul>
-			  </div>
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-left">Convert Length and Distance</div>
-			  <div class="panel-body">
-				<ul>
+			  </ul>
+			  
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-left" style="padding:10px;border-top:1px solid #e6e5e5;background:#fafafa;"><h4>Length and Distance</h4></div>
+			  <ul style="margin-left:-12px;padding-bottom:20px;">
 				  <li><a href="length_dist_metric.php">Metric</a></li>
 				  <li><a href="length_dist_american_system_of_measures.php">The American System of Measures (US Customary Units)</a></li>
 				  <li><a href="length_dist_british_imperial.php">British (Imperial) Measure</a></li>
@@ -42,11 +40,10 @@
 				  <li><a href="length_dist_astronomical.php">Astronomical</a></li>
 				  <li><a href="length_dist_grace_hopper.php">Grace Hopper's units of distance</a></li>
 				  <li><a href="length_dist_natural_units.php">Natural units</a></li>
-				</ul>
-			  </div>
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-left">Convert Capacity and Volume</div>
-			  <div class="panel-body">
-				<ul>
+			  </ul>
+			 
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-left" style="padding:10px;border-top:1px solid #e6e5e5;background:#fafafa;"><h4>Capacity and Volume</h4></div>
+			  <ul style="margin-left:-12px;padding-bottom:20px;">
 				  <li><a href="volume_metric.php">Metric</a></li>
 				  <li><a href="volume_us_liquid_measure.php">U.S. Liquid Measure</a></li>
 				  <li><a href="volume_us_dry_measure.php">U.S. Dry Measure</a></li>
@@ -64,15 +61,15 @@
 				  <li><a href="volume_chinese_units_1930.php">Chinese units of 1930</a></li>
 				  <li><a href="volume_chinese_units_1915.php">Chinese units of 1915</a></li>
 				  <li><a href="volume_thai.php">Thai units</a></li>
-				</ul>
-			  </div>
-			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-left">Fahrenheit, Celsius and more</div>
-			  <div class="panel-body">
-				<ul>
+			  </ul>
+
+
+			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-left" style="padding:10px;border-top:1px solid #e6e5e5;background:#fafafa;"><h4>Temperature</h4></div>
+			  <ul style="margin-left:-12px;padding-bottom:20px;">
 				  <li><a href="temp_convert.php">Temperature conversion</a></li>
 				  <li><a href="temp_historical.php">Historical temperature scales</a></li>
-				</ul>
-			  </div>
+			  </ul>
+
 			  <!-- <div class="pricing-table-price panel-subtitle panel-heading-divider" style="padding-left:15px;">Computer</div>
 			  <div class="panel-body">
 				<ul>
