@@ -1,9 +1,7 @@
-<div class="col-md-3" style="padding:0px;">
+<div class="col-md-3">
 <?php for($i=0;$i<3;$i++){?>
-	<div class="pricing-table">
-	  <div class="pricing-table-title">Basic</div>
-	  <div class="pricing-table-price"><span class="currency">us</span><span class="value">$8</span></div>
-	  <div class="pricing-table-frecuency">month</div>
+	<div class="pricing-table" style="background:#fe8458;height:250px;">
+	  <div class="pricing-table-price" style="color:#fff;margin-top:20%;"><span class="currency">Add</span><span class="value">Block</span></div>
 	</div>
 <?php } ?>
 </div>
