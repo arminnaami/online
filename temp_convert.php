@@ -82,7 +82,7 @@
                       <label>degrees Reaumur (&deg;Re)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs Reaumur" onkeyup="myFunction(this.value);">
+                      <input type="text" class="boots_form-control form-control-xs Reaumur" onkeyup="reazz(this.value);">
                     </div>
                   </div>
                   <div class="form-group inline row">
@@ -90,7 +90,7 @@
                       <label>Planck temperature</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs Planck" onkeyup="myFunction(this.value);">
+                      <input type="text" class="boots_form-control form-control-xs Planck" onkeyup="planck(this.value);">
                     </div>
                   </div>
                 </form>
@@ -147,16 +147,39 @@
 			$('.Planck').val(convert_kel_planck);
 		}
 		function fahzz(fah) {
-		  var convert_fah_cel = (parseFloat(fah)-32)/1.8;
+			var fahren = parseFloat(fah);
+		  var convert_fah_cel = (fahren-32)/1.8;
 			$('.Celsius').val(convert_fah_cel);
-		  var convert_fah_kel = ((parseFloat(fah)-32)/1.8)+273.15;
+		  var convert_fah_kel = ((fahren-32)/1.8)+273.15;
 			$('.kelvin').val(convert_fah_kel);
-		  var convert_fah_reau = (parseFloat(fah) - 32)* 0.44444;
+		  var convert_fah_reau = (fahren - 32)* 0.44444;
 			$('.Reaumur').val(convert_fah_reau);
 			var power = Math.pow(10,32);
-		  var convert_fah_planck = parseFloat(fah);
-		  alert(convert_fah_planck);
+		  var convert_fah_planck = ((fahren + 459.67)/(2.55030092 * power));
 			$('.Planck').val(convert_fah_planck);
+		}
+		function reazz(reau) {
+			var reaumur = parseFloat(reau);
+		  var convert_reau_cel = reaumur * 1.25;
+			$('.Celsius').val(convert_reau_cel);
+		  var convert_reau_kel = reaumur * 1.25 + 273.15;
+			$('.kelvin').val(convert_reau_kel);
+		  var convert_reau_fahre = reaumur * 2.25 + 32;
+			$('.Fahrenheit').val(convert_reau_fahre);
+			var power = Math.pow(10,32);
+		  var convert_reau_planck =  (reaumur/1.133428E+32) + 1.92795660597762E-30;
+			$('.Planck').val(convert_reau_planck);
+		}
+		function planck(plan) {
+			var plankzz = parseFloat(plan);
+		  var convert_planck_cel = 1.416785E+32*plankzz;
+			$('.Celsius').val(convert_planck_cel);
+		  var convert_planck_kel = 1.416785E+32*plankzz;
+			$('.kelvin').val(convert_planck_kel);
+		  var convert_planck_fahre = 2.550213E+32*plankzz;
+			$('.Fahrenheit').val(convert_planck_fahre);
+		  var convert_planck_reau = 1.133428E+32*plankzz;
+			$('.Reaumur').val(convert_planck_reau);
 		}
 	</script>
   </body>

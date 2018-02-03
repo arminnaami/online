@@ -62,13 +62,13 @@
                       <label>degrees Rankine (&deg;R)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs Rankine" onkeyup="rankzz(this.value)">
                     </div>
                     <div class="col-sm-3">
                       <label>degrees R&oslash;mer (&deg;R&Oslash;)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs Romer" onkeyup="romerzz(this.value)">
                     </div>
                   </div>
                   <div class="form-group inline row">
@@ -76,13 +76,13 @@
                       <label>degrees Newton (&deg;N)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs Newton" onkeyup="newzz(this.value)">
                     </div>
                     <div class="col-sm-3">
                       <label>degrees Delisle (&deg;D)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs Delisle" onkeyup="delizz(this.value)">
                     </div>
                   </div>
                 </form>
@@ -114,5 +114,43 @@
       }
                        );
     </script>
+	<script>
+		function rankzz(rani) {
+			var ranik = parseFloat(rani);
+		  var convert_ran_rom = (0.291667*ranik) - 135.904;
+			$('.Romer').val(convert_ran_rom);
+		  var convert_ran_newt = (0.183333*ranik) - 90.1395;
+			$('.Newton').val(convert_ran_newt);
+		  var convert_ran_deli = (ranik/-1.20000048) + 559.725;
+			$('.Delisle').val(convert_ran_deli);
+		}
+		function romerzz(romer) {
+			var romer = parseFloat(romer);
+		  var convert_rom_rani = (3.42857*romer) + 465.956;
+			$('.Rankine').val(convert_rom_rani);
+		  var convert_rom_newt = (0.628571*romer) - 4.71429;
+			$('.Newton').val(convert_rom_newt);
+		  var convert_rom_deli = (romer/-0.35000035) + 171.429;
+			$('.Delisle').val(convert_rom_deli);
+		}
+		function newzz(newt) {
+			var newt = parseFloat(newt);
+		  var convert_newt_rani = (5.45455*newt) + 491.67;
+			$('.Rankine').val(convert_newt_rani);
+		  var convert_newt_rom = (1.59091*newt) + 7.5;
+			$('.Romer').val(convert_newt_rom);
+		  var convert_newt_deli = (newt/-0.22000022) + 150;
+			$('.Delisle').val(convert_newt_deli);
+		}
+		function delizz(deli) {
+			var deli = parseFloat(deli);
+		  var convert_deli_rani = (deli/-0.833333333) + 671.67;
+			$('.Rankine').val(convert_deli_rani);
+		  var convert_deli_rom = (deli/-2.85714286) + 60;
+			$('.Romer').val(convert_deli_rom);
+		  var convert_deli_newt = (deli/-4.54545455) + 33;
+			$('.Newton').val(convert_deli_newt);
+		}
+	</script>
   </body>
 </html>
