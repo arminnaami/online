@@ -29,6 +29,11 @@
         border-radius: .25rem;
         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
       }
+	   .form-control-xs::-webkit-inner-spin-button, 
+	   .form-control-xs::-webkit-outer-spin-button { 
+		-webkit-appearance: none; 
+		margin: 0; 
+	  }
     </style>
   </head>
   <body>
@@ -62,13 +67,13 @@
                       <label>degrees Rankine (&deg;R)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs Rankine" onkeyup="rankzz(this.value)">
+                      <input type="number" class="boots_form-control form-control-xs Rankine" onkeyup="rankzz(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                     <div class="col-sm-3">
                       <label>degrees R&oslash;mer (&deg;R&Oslash;)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs Romer" onkeyup="romerzz(this.value)">
+                      <input type="number" class="boots_form-control form-control-xs Romer" onkeyup="romerzz(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                   <div class="form-group inline row">
@@ -76,13 +81,13 @@
                       <label>degrees Newton (&deg;N)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs Newton" onkeyup="newzz(this.value)">
+                      <input type="number" class="boots_form-control form-control-xs Newton" onkeyup="newzz(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                     <div class="col-sm-3">
                       <label>degrees Delisle (&deg;D)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs Delisle" onkeyup="delizz(this.value)">
+                      <input type="number" class="boots_form-control form-control-xs Delisle" onkeyup="delizz(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                 </form>
