@@ -62,13 +62,13 @@
 					 <label>kilometer (km)</label>
 					</div>
                     <div class="col-sm-3">
-                       <input type="text" class="boots_form-control form-control-xs">
+                       <input type="text" class="boots_form-control form-control-xs kilometer" onkeyup="kilometer(this.value);">
                     </div>
 					<div class="col-sm-3">
 					 <label>millimeter (mm)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs milimeter" onkeyup="milimeter(this.value);">
                     </div>
                   </div>
 
@@ -77,13 +77,13 @@
 					 <label>meter (m)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs meter">
                     </div>
 					<div class="col-sm-3">
-					 <label>micrometre (micron)</label>
+					 <label>micrometrer (micron)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs micrometer">
                     </div>
                   </div>
 
@@ -92,13 +92,13 @@
 					 <label>decimeter (dm)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs decimeter">
                     </div>
 					<div class="col-sm-3">
 					 <label>nanometer (nm)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs nanometer">
                     </div>
                   </div>
 
@@ -107,13 +107,13 @@
 					 <label>centimeter (cm)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs centimeter">
                     </div>
 					<div class="col-sm-3">
 					 <label>angstrom</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs angstrom">
                     </div>
                   </div>
                 </form>
@@ -145,5 +145,27 @@
       }
     );
     </script>
+	<script>
+		function kilometer(val) {
+			var convert_kilm_metr = parseFloat(val)*1000;
+			$('.meter').val(convert_kilm_metr);
+			var convert_kilm_milimter = parseFloat(val)*1000000;
+			$('.milimeter').val(convert_kilm_milimter);
+			var convert_kilm_mcromter = parseFloat(val) * 1000000000;
+			$('.micrometer').val(convert_kilm_mcromter);
+			var convert_kilm_decimter = parseFloat(val) * 10000;
+			$('.decimeter').val(convert_kilm_decimter);
+			var convert_kilm_nanometer = parseFloat(val) * 1000000000000;
+			$('.nanometer').val(convert_kilm_nanometer);
+			var convert_kilm_centimeter = parseFloat(val) * 100000;
+			$('.centimeter').val(convert_kilm_centimeter);
+			var convert_kilm_angstrom = parseFloat(val) * 10000000000000;
+			$('.angstrom').val(convert_kilm_angstrom);
+		}
+		function milimeter(val){
+			alert(val);
+			exit;
+		}
+</script>
   </body>
 </html>
