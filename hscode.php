@@ -38,8 +38,9 @@
 	  <div class="main-content container" style="margin-top:-25px;max-width:1480px;">
 
 		<div class="row">
-			<div class="panel panel-default panel-table" style="background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);width:100%;">
-					<h1 style="text-align:center;color:white;font-weight:bold;padding:25px;">Ad Block</h1>
+			<div class="panel panel-default panel-table" style="width:100%;background:none;border:0px;box-shadow:none;">
+					 <a href="#" target="ESEA" style="float:left;margin-left:10px;"><img src="images/images.jpg" width="728" height="90" alt="ESEA" title="ESEA" border="0"></a>
+					 <a href="#" target="ESEA" style="float:right;margin-right:10px"><img src="images/Doctor-Banner-Ad-Horizontal.png" width="728" height="90" alt="ESEA" title="ESEA" border="0"></a>
             </div>
 		</div>
 	    <div class="row">
@@ -49,8 +50,9 @@
 		</div>
 
 		<div class="row">
-			<div class="panel panel-default panel-table" style="background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);width:100%;">
-					<h1 style="text-align:center;color:white;font-weight:bold;padding:25px;">Ad Block</h1>
+			<div class="panel panel-default panel-table" style="width:100%;background:none;border:0px;box-shadow:none;">
+					 <a href="#" target="ESEA" style="float:left;margin-left:10px;"><img src="images/images.jpg" width="728" height="90" alt="ESEA" title="ESEA" border="0"></a>
+					 <a href="#" target="ESEA" style="float:right;margin-right:10px"><img src="images/Doctor-Banner-Ad-Horizontal.png" width="728" height="90" alt="ESEA" title="ESEA" border="0"></a>
             </div>
 		</div>
 

@@ -15,7 +15,7 @@
 
 	<div id="mai-navbar-collapse" class="navbar-collapse collapse mai-nav-tabs" style="margin-top:-40px;padding:10px;">
 	  <ul class="nav navbar-nav" style="width:100%;">
-		<li class="nav-item parent open" >
+		<li class="nav-item parent open" style="width:30%;">
 		  <a href="#" role="button" class="nav-link" style="background:none;height:70px;width:100%;">
 			<img src="images/logodof.png" style="height:70px;">
 			<div class="clearfix"></div>
@@ -62,12 +62,12 @@
 		  </ul>
 		</li>
 		
-		<li class="nav-item parent open" style="float:right;width:70%;background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
+		<li class="nav-item parent open" style="float:right;width:70%;">
 		  <!--<a href="#" role="button" class="nav-link" style="background:none;">
 			<img src="images/images.png" style="height:70px;width:100%;" class="img-responsive">
 			<div class="clearfix"></div>
 		  </a>-->
-		  <h1 style="text-align:center;padding-top:15px;">Ad block</h1>
+		  <a href="http://ads.dubaitrade.biz/www/delivery/ck.php?oaparams=2__bannerid=321__zoneid=6__cb=37b49ea7a2__oadest=http%3A%2F%2Fwww.esea.ae" target="ESEA"><img src="http://ads.dubaitrade.biz/www/images/de36b43e4188615b3189621c3030fccc.gif" width="728" height="90" alt="ESEA" title="ESEA" border="0"></a>
 		</li>
 	  </ul>
 	  
