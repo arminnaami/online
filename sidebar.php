@@ -16,7 +16,6 @@
 				  <li><a href="weight_troy.php">Troy</a></li>
 				  <li><a href="weight_apothecaries.php">Apothecaries</a></li>
 				  <li><a href="weight_natural_units.php">Natural units</a></li>
-				  <li><a href="javascript:void(0);">Show More</a></li>
 				  <li><a href="weight_japanese.php">Japanese</a></li>
 				  <li><a href="weight_chinese_units_1959.php">Chinese units since 1959</a></li>
 				  <li><a href="weight_chinese_units_1930_and_1959.php">Chinese units between 1930 and 1959</a></li>
