@@ -404,30 +404,79 @@
 		}
 		function micro(microg){
 			var microgr = parseFloat(microg);
-		  var convert_micro_kilo = microgr/1000000;
+		  var convert_micro_kilo = microgr/1.0E+15;
 			$('.kilotonne').val(convert_micro_kilo);
-		  var convert_micro_carat = microgr/0.0002;
+		  var convert_micro_carat = microgr/200000;
 			$('.carat').val(convert_micro_carat);
-		  var convert_micro_tone = microgr/1000;
+		  var convert_micro_tone = microgr/1000000000000;
 			$('.tonne').val(convert_micro_tone);
-		  var convert_micro_gram =microgr/0.001;
+		  var convert_micro_gram =microgr/1000000;
 			$('.gram').val(convert_micro_gram);
-		  var convert_micro_kiloN = microgr/101.971621;
+		  var convert_micro_kiloN = microgr/1.0E+15;
 			$('.kilonewton').val(convert_micro_kiloN);
-		  var convert_micro_centi = microgr/1.0E-5;
+		  var convert_micro_centi = microgr/10000;
 			$('.centigram').val(convert_micro_centi);
-		  var convert_micro_cent = microgr/100;
+		  var convert_micro_cent = microgr/100000000000;
 			$('.centner').val(convert_micro_cent);
-		  var convert_micro_mili = microgr/1.0E-6;
+		  var convert_micro_mili = microgr/1000;
 			$('.milligram').val(convert_micro_mili);
-		  var convert_micro_kilogram = microgr/1.0E-9;
+		  var convert_micro_kilogram = microgr/1000000000;
 			$('.kilogram').val(convert_micro_kilogram);
-		  var convert_micro_newton = microgr/0.101971621;
+		  var convert_micro_newton = microgr/101971621;
 			$('.newton').val(convert_micro_newton); 
-		  var convert_micro_atomic = microgr/1.6603145E-27;
+		  var convert_micro_atomic = microgr/1.6605655E-18;
 			$('.atomic').val(convert_micro_atomic); 
 		}
-		
+		function newt(newto){
+			var newton = parseFloat(newto);
+		  var convert_new_kilo = newton/9806650.0286389;
+			$('.kilotonne').val(convert_new_kilo);
+		  var convert_new_carat = newton/0.0019613300057278;
+			$('.carat').val(convert_new_carat);
+		  var convert_new_tone = newton/9806.6500286389;
+			$('.tonne').val(convert_new_tone);
+		  var convert_new_gram =newton/0.0098066500286389;
+			$('.gram').val(convert_new_gram);
+		  var convert_new_kiloN = newton/1000;
+			$('.kilonewton').val(convert_new_kiloN);
+		  var convert_new_centi = newton/9.8066500286389E-5;
+			$('.centigram').val(convert_new_centi);
+		  var convert_new_cent = newton/980.66500286389;
+			$('.centner').val(convert_new_cent);
+		  var convert_new_mili = newton/9.8066500286389E-6;
+			$('.milligram').val(convert_new_mili);
+		  var convert_new_kilogram = newton/9.8066500286389;
+			$('.kilogram').val(convert_new_kilogram);
+		  var convert_new_micro = newton/9.8066500286389E-9;
+			$('.microgram').val(convert_new_micro); 
+		  var convert_new_atomic = newton/1.6284584708132E-26;
+			$('.atomic').val(convert_new_atomic); 
+		}
+		function atom(ato){
+			var amu = parseFloat(ato);
+		  var convert_amu_kilo = amu/6.0220448997646E+32;
+			$('.kilotonne').val(convert_amu_kilo);
+		  var convert_amu_carat = amu/1.2044089799529E+23;
+			$('.carat').val(convert_amu_carat);
+		  var convert_amu_tone = amu/6.0220448997646E+29;
+			$('.tonne').val(convert_amu_tone);
+		  var convert_amu_gram =amu/6.0220448997646E+23;
+			$('.gram').val(convert_amu_gram);
+		  var convert_amu_kiloN = amu/6.1407768016378E+28;
+			$('.kilonewton').val(convert_amu_kiloN);
+		  var convert_amu_centi = amu/6.0220448997646E+21;
+			$('.centigram').val(convert_amu_centi);
+		  var convert_amu_cent = amu/6.0220448997646E+28;
+			$('.centner').val(convert_amu_cent);
+		  var convert_amu_mili = amu/6.0220448997646E+20;
+			$('.milligram').val(convert_amu_mili);
+		  var convert_amu_kilogram = amu/6.0220448997646E+26;
+			$('.kilogram').val(convert_amu_kilogram);
+		  var convert_amu_micro = amu/6.0220448997646E+17;
+			$('.microgram').val(convert_amu_micro); 
+		  var convert_amu_new = amu/6.1407768016378E+25;
+			$('.newton').val(convert_amu_new); 
+		}		
 	</script>
   </body>
 </html>
