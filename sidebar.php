@@ -89,7 +89,7 @@
 				  <li><a href="volume_chinese_units_1915.php">Chinese units of 1915</a></li>
 				  <li><a href="volume_thai.php">Thai units</a></li>
 			  </ul>
-			  <a class="btn btn-secondary btn-block btn_show_3" style="background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);center;color:white;font-weight:bold;display:none;" onclick="show_less_3();">Show More</a>
+			  <a class="btn btn-secondary btn-block btn_show_3" style="background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);center;color:white;font-weight:bold;display:none;" onclick="show_less_3();">Show Less</a>
 
 
 			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-left" style="padding:10px;border-top:1px solid #e6e5e5;background:#fafafa;"><h4>Temperature</h4></div>
