@@ -29,6 +29,11 @@
         border-radius: .25rem;
         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
       }
+	   .form-control-xs::-webkit-inner-spin-button, 
+	   .form-control-xs::-webkit-outer-spin-button { 
+		-webkit-appearance: none; 
+		margin: 0; 
+	  }
     </style>
   </head>
   <body>
@@ -62,13 +67,13 @@
                       <label>degrees Celsius (&deg;C)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs Celsius" onkeyup="celzz(this.value);">
+                      <input type="number" class="boots_form-control form-control-xs Celsius" onkeyup="celzz(this.value);" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                     <div class="col-sm-3">
                       <label>kelvin (K)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs kelvin" onkeyup="kelzz(this.value);">
+                      <input type="number" class="boots_form-control form-control-xs kelvin" onkeyup="kelzz(this.value);" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                   <div class="form-group inline row">
@@ -76,13 +81,13 @@
                       <label>degrees Fahrenheit (&deg;F)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs Fahrenheit" onkeyup="fahzz(this.value);">
+                      <input type="number" class="boots_form-control form-control-xs Fahrenheit" onkeyup="fahzz(this.value);" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                     <div class="col-sm-3">
                       <label>degrees Reaumur (&deg;Re)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs Reaumur" onkeyup="reazz(this.value);">
+                      <input type="number" class="boots_form-control form-control-xs Reaumur" onkeyup="reazz(this.value);" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                   <div class="form-group inline row">
@@ -90,7 +95,7 @@
                       <label>Planck temperature</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs Planck" onkeyup="planck(this.value);">
+                      <input type="number" class="boots_form-control form-control-xs Planck" onkeyup="planck(this.value);" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                 </form>
@@ -131,7 +136,7 @@
 		  var convert_cel_reau = parseFloat(celsi) * 0.80000;
 			$('.Reaumur').val(convert_cel_reau);
 			var power = Math.pow(10,32);
-		  var convert_cel_planck = parseFloat(celsi)+ 273.15 / (1.41683385 * power);
+		  var convert_cel_planck = parseFloat(celsi)/1.416785E+32;
 			$('.Planck').val(convert_cel_planck);
 		}
 

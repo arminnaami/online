@@ -1,7 +1,8 @@
 <div class="col-md-3">
-<?php for($i=0;$i<3;$i++){?>
-	<div class="pricing-table" style="background:#fe8458;height:250px;">
-	  <div class="pricing-table-price" style="color:#fff;margin-top:20%;"><span class="currency">Add</span><span class="value">Block</span></div>
-	</div>
-<?php } ?>
+	<a href="#" target="ESEA"><img src="images/square1.jpg" style="height:250px;width:250px;" alt="ESEA" title="ESEA" border="0"></a>
+	<p></p>
+	<a href="#" target="ESEA"><img src="images/square2.jpg" style="height:250px;width:250px;" alt="ESEA" title="ESEA" border="0"></a>
+	<p></p>
+	<a href="#" target="ESEA"><img src="images/square3.jpg" style="height:250px;width:250px;" alt="ESEA" title="ESEA" border="0"></a>
+
 </div>
