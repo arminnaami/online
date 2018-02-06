@@ -29,6 +29,11 @@
         border-radius: .25rem;
         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
       }
+	  .form-control-xs::-webkit-inner-spin-button, 
+	  .form-control-xs::-webkit-outer-spin-button { 
+		  -webkit-appearance: none; 
+		  margin: 0; 
+		}
     </style>
   </head>
   <body>
@@ -51,6 +56,9 @@
                 </span>
               </div>
             </div>
+			<div class="panel panel-default" style="background:white;height:100px;padding:10px;background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);margin-bottom:20px;">
+				<h1 style="text-align:center;color:white;font-weight:bold;padding:25px;">Ad Block</h1>
+			</div>
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;">
                 <h4>U.S. Dry Measure</h4>
@@ -62,13 +70,13 @@
                       <label>barrel</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs barrel" onkeyup="from_barrel();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                     <div class="col-sm-3">
                       <label>gallon (gal)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs gallon" onkeyup="from_gallon();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                   <div class="form-group inline row">
@@ -76,13 +84,13 @@
                       <label>bushel (bu)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs bushel" onkeyup="from_bushel();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                     <div class="col-sm-3">
                       <label>quart (qt)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs quart" onkeyup="from_quart();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                   <div class="form-group inline row">
@@ -90,18 +98,21 @@
                       <label>peck (pk)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs peck" onkeyup="from_peck();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                     <div class="col-sm-3">
                       <label>pint (pt)</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs pint" onkeyup="from_pint();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                 </form>
               </div>
             </div>
+			<div class="panel panel-default" style="background:white;height:100px;padding:10px;background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);margin-bottom:20px;">
+				<h1 style="text-align:center;color:white;font-weight:bold;padding:25px;">Ad Block</h1>
+			</div>
 		 </div>
            <?php include("right_sidebar.php");?>
           <!--Date Picker-->
@@ -127,5 +138,136 @@
       }
                        );
     </script>
+	<script>
+	function from_barrel()
+	{
+		var barrel = $(".barrel").val();
+
+		var gallon = barrel * 26.25;
+		$(".gallon").val(gallon);
+
+		var bushel = barrel * 3.281;
+		$(".bushel").val(bushel);
+
+		var quart = barrel * 105;
+		$(".quart").val(quart);
+
+		var peck = barrel * 13.12;
+		$(".peck").val(peck);
+
+		var pint = barrel * 210;
+		$(".pint").val(pint);
+	}
+	</script>
+
+	<script>
+	function from_gallon()
+	{
+		var gallon = $(".gallon").val();
+
+		var barrel = gallon * 0.0381;
+		$(".barrel").val(barrel);
+
+		var bushel = gallon * 0.125;
+		$(".bushel").val(bushel);
+
+		var quart = gallon * 4;
+		$(".quart").val(quart);
+
+		var peck = gallon * 0.5;
+		$(".peck").val(peck);
+
+		var pint = gallon * 8;
+		$(".pint").val(pint);
+	}
+	</script>
+
+	<script>
+	function from_bushel()
+	{
+		var bushel = $(".bushel").val();
+
+		var barrel = bushel * 0.3048;
+		$(".barrel").val(barrel);
+
+		var gallon = bushel * 8;
+		$(".gallon").val(gallon);
+
+		var quart = bushel * 32;
+		$(".quart").val(quart);
+
+		var peck = bushel * 4;
+		$(".peck").val(peck);
+
+		var pint = bushel * 64;
+		$(".pint").val(pint);
+	}
+	</script>
+
+	<script>
+	function from_quart()
+	{
+		var quart = $(".quart").val();
+
+		var barrel = quart * 0.009524;
+		$(".barrel").val(barrel);
+
+		var gallon = quart * 0.25;
+		$(".gallon").val(gallon);
+
+		var bushel = quart * 0.03125;
+		$(".bushel").val(bushel);
+
+		var peck = quart * 0.125;
+		$(".peck").val(peck);
+
+		var pint = quart * 2;
+		$(".pint").val(pint);
+	}
+	</script>
+
+	<script>
+	function from_peck()
+	{
+		var peck = $(".peck").val();
+
+		var barrel = peck * 0.07619;
+		$(".barrel").val(barrel);
+
+		var gallon = peck * 2;
+		$(".gallon").val(gallon);
+
+		var bushel = peck * 0.25;
+		$(".bushel").val(bushel);
+
+		var quart = peck * 8;
+		$(".quart").val(quart);
+
+		var pint = peck * 16;
+		$(".pint").val(pint);
+	}
+	</script>
+
+	<script>
+	function from_pint()
+	{
+		var pint = $(".pint").val();
+
+		var barrel = pint * 0.004762;
+		$(".barrel").val(barrel);
+
+		var gallon = pint * 0.125;
+		$(".gallon").val(gallon);
+
+		var bushel = pint * 0.01562;
+		$(".bushel").val(bushel);
+
+		var quart = pint * 0.5;
+		$(".quart").val(quart);
+
+		var peck = pint * 0.0625;
+		$(".peck").val(peck);
+	}
+	</script>
   </body>
 </html>
