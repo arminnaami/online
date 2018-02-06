@@ -31,6 +31,12 @@
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	}
 	</style>
+<style> .form-control-xs::-webkit-inner-spin-button, 
+    .form-control-xs::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+   }
+</style>
   </head>
   <body>
 	<div class="mai-wrapper">
@@ -65,13 +71,13 @@
 					 <label>nautical league (naut.leag)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs n_leauge" onkeyup="n_leauge(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
 					<div class="col-sm-3">
 					 <label>cable length (cbl)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs cable_length"  onkeyup="cable_length(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
 
@@ -80,13 +86,13 @@
 					 <label>nautical mile (naut.mi)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs n_mile" onkeyup="n_mile(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
 					<div class="col-sm-3">
 					 <label>fathom (fath)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs fathom" onkeyup="fathom(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                 </form>
@@ -118,5 +124,59 @@
       }
     );
     </script>
+	<script>
+		function n_leauge(val) 
+		{
+			var convert_n_leauge_cable_length = parseFloat(val)*30;
+			$('.cable_length').val(convert_n_leauge_cable_length);
+
+			var convert_n_leauge_nautical_mile = parseFloat(val)*3;
+			$('.n_mile').val(convert_n_leauge_nautical_mile);
+
+			var convert_n_leauge_fathom = parseFloat(val)*3038.06;
+			$('.fathom').val(convert_n_leauge_fathom);
+		}
+	</script>
+
+	<script>
+		function cable_length(val) 
+		{
+			var convert_cable_length_n_leauge = parseFloat(val)/30;
+			$('.n_leauge').val(convert_cable_length_n_leauge);
+
+			var convert_cable_length_nautical_mile = parseFloat(val)/10;
+			$('.n_mile').val(convert_cable_length_nautical_mile);
+
+			var convert_cable_length_fathom = parseFloat(val)*101.33;
+			$('.fathom').val(convert_cable_length_fathom);
+		}
+	</script>
+
+	<script>
+		function n_mile(val) 
+		{
+			var convert_n_mile_n_leauge = parseFloat(val)/3;
+			$('.n_leauge').val(convert_n_mile_n_leauge);
+
+			var convert_n_mile_cable_length = parseFloat(val)*10;
+			$('.cable_length').val(convert_n_mile_cable_length);
+
+			var convert_n_mile_fathom = parseFloat(val)*1012.69;
+			$('.fathom').val(convert_n_mile_fathom);
+		}
+	</script>
+		<script>
+		function fathom(val) 
+		{
+			var convert_fathom_n_leauge = parseFloat(val)*0.000329158;
+			$('.n_leauge').val(convert_fathom_n_leauge);
+
+			var convert_fathom_cable_length = parseFloat(val)/100;
+			$('.cable_length').val(convert_fathom_cable_length);
+
+			var convert_fathom_n_mile = parseFloat(val)*0.000987473;
+			$('.n_mile').val(convert_fathom_n_mile);
+		}
+	</script>
   </body>
 </html>

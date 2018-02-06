@@ -28,21 +28,19 @@
 			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-left" style="padding:10px;border-top:1px solid #e6e5e5;background:#fafafa;"><h4>Length and Distance</h4></div>
 			  <ul class="hide_2" style="margin-left:-12px;">
 				  <li><a href="length_dist_metric.php">Metric</a></li>
-				  <li><a href="length_dist_american_system_of_measures.php">The American System of Measures (US Customary Units)</a></li>
-				  <li><a href="length_dist_british_imperial.php">British (Imperial) Measure</a></li>
-				  <li><a href="length_dist_us_surveyors.php">US Surveyors' Measure</a></li>
 				  <li><a href="length_dist_international_nautical.php">International Nautical Measure</a></li>
+				   <li><a href="length_dist_us_nautical.php">US Nautical Measure</a></li>
+				  <li><a href="length_dist_british_imperial_nautical.php">British (Imperial) Nautical Measure</a></li>
+				  
 			  </ul>
 			  <a class="btn btn-secondary btn-block btn_hide_2" style="background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);center;color:white;font-weight:bold;" onclick="show_more_2();">Show More</a>
 			   <ul class="show_2" style="margin-left:-12px;display:none;">
 				  <li><a href="length_dist_metric.php">Metric</a></li>
-				  <li><a href="length_dist_american_system_of_measures.php">The American System of Measures (US Customary Units)</a></li>
-				  <li><a href="length_dist_british_imperial.php">British (Imperial) Measure</a></li>
-				  <li><a href="length_dist_us_surveyors.php">US Surveyors' Measure</a></li>
+				
 				  <li><a href="length_dist_international_nautical.php">International Nautical Measure</a></li>
 				  <li><a href="length_dist_us_nautical.php">US Nautical Measure</a></li>
 				  <li><a href="length_dist_british_imperial_nautical.php">British (Imperial) Nautical Measure</a></li>
-				  <li><a href="length_dist_spanish_customary_units.php">Spanish Customary Units Still In Use Today</a></li>
+				 
 				  <li><a href="length_dist_japanese.php">Japanese</a></li>
 				  <li><a href="length_dist_chinese_units_1930.php">Chinese units of 1930</a></li>
 				  <li><a href="length_dist_chinese_units_1915.php">Chinese units of 1915</a></li>
