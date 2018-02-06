@@ -31,6 +31,13 @@
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	}
 	</style>
+
+	<style> .form-control-xs::-webkit-inner-spin-button, 
+    .form-control-xs::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+   }
+</style>
   </head>
   <body>
 	<div class="mai-wrapper">
@@ -62,13 +69,13 @@
 					 <label>kilometer (km)</label>
 					</div>
                     <div class="col-sm-3">
-                       <input type="text" class="boots_form-control form-control-xs kilometer" onkeyup="kilometer(this.value);">
+                       <input type="number" class="boots_form-control form-control-xs kilometer" onkeyup="babarbichi(this.value);" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
 					<div class="col-sm-3">
 					 <label>millimeter (mm)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs milimeter" onkeyup="milimeter(this.value);">
+                      <input type="number" class="boots_form-control form-control-xs milimeter" onkeyup="milimeter(this.value);" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
 
@@ -77,13 +84,13 @@
 					 <label>meter (m)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs meter">
+                      <input type="number" class="boots_form-control form-control-xs meter" onkeyup="meter(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
 					<div class="col-sm-3">
 					 <label>micrometrer (micron)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs micrometer">
+                      <input type="number" class="boots_form-control form-control-xs micrometer" onkeyup="micrometer(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
 
@@ -92,13 +99,13 @@
 					 <label>decimeter (dm)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs decimeter">
+                      <input type="number" class="boots_form-control form-control-xs decimeter" onkeyup="decimeter(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
 					<div class="col-sm-3">
 					 <label>nanometer (nm)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs nanometer">
+                      <input type="number" class="boots_form-control form-control-xs nanometer" onkeyup="nanometer(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
 
@@ -107,13 +114,13 @@
 					 <label>centimeter (cm)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs centimeter">
+                      <input type="number" class="boots_form-control form-control-xs centimeter" onkeyup="centimeter(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
 					<div class="col-sm-3">
 					 <label>angstrom</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs angstrom">
+                      <input type="number" class="boots_form-control form-control-xs angstrom" onkeyup="angstrom(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                 </form>
@@ -146,7 +153,8 @@
     );
     </script>
 	<script>
-		function kilometer(val) {
+		function babarbichi(val) 
+		{
 			var convert_kilm_metr = parseFloat(val)*1000;
 			$('.meter').val(convert_kilm_metr);
 			var convert_kilm_milimter = parseFloat(val)*1000000;
@@ -162,9 +170,145 @@
 			var convert_kilm_angstrom = parseFloat(val) * 10000000000000;
 			$('.angstrom').val(convert_kilm_angstrom);
 		}
-		function milimeter(val){
-			alert(val);
-			exit;
+</script>
+
+	<script>
+		function milimeter(val) 
+		{
+			var convert_milimter_klmter = parseFloat(val)/1000000;
+			$('.kilometer').val(convert_milimter_klmter);
+			var convert_milimter_meter = parseFloat(val)/1000;
+			$('.meter').val(convert_milimter_meter);
+			var convert_milimter_mcromter = parseFloat(val) / 0.0010000;
+			$('.micrometer').val(convert_milimter_mcromter);
+			var convert_milimter_decimter = parseFloat(val) / 100;
+			$('.decimeter').val(convert_milimter_decimter);
+			var convert_milimter_nanometer = parseFloat(val) * 1000000;
+			$('.nanometer').val(convert_milimter_nanometer);
+			var convert_milimter_centimeter = parseFloat(val) / 10;
+			$('.centimeter').val(convert_milimter_centimeter);
+			var convert_milimter_angstrom = parseFloat(val) * 10000000;
+			$('.angstrom').val(convert_milimter_angstrom);
+		}
+</script>
+
+	<script>
+		function meter(val) 
+		{
+			var convert_mter_klmter = parseFloat(val)/1000;
+			$('.kilometer').val(convert_mter_klmter);
+			var convert_mter_milimter = parseFloat(val)*1000;
+			$('.milimeter').val(convert_mter_milimter);
+			var convert_mter_mcromter = parseFloat(val) * 1000000;
+			$('.micrometer').val(convert_mter_mcromter);
+			var convert_mter_decimter = parseFloat(val) * 10;
+			$('.decimeter').val(convert_mter_decimter);
+			var convert_mter_nanometer = parseFloat(val) * 1000000000;
+			$('.nanometer').val(convert_mter_nanometer);
+			var convert_mter_centimeter = parseFloat(val)*100;
+			$('.centimeter').val(convert_mter_centimeter);
+			var convert_mter_angstrom = parseFloat(val) * 10000000000;
+			$('.angstrom').val(convert_mter_angstrom);
+		}
+</script>
+
+	<script>
+		function micrometer(val) 
+		{
+			var convert_mcromter_klmter = parseFloat(val)/1000000000;
+			$('.kilometer').val(convert_mcromter_klmter);
+			var convert_mcromter_milimter = parseFloat(val)/1000;
+			$('.milimeter').val(convert_mcromter_milimter);
+			var convert_mcromter_mter = parseFloat(val) / 1000000;
+			$('.meter').val(convert_mcromter_mter);
+			var convert_mcromter_decimter = parseFloat(val) /100000;
+			$('.decimeter').val(convert_mcromter_decimter);
+			var convert_mcromter_nanometer = parseFloat(val) * 1000;
+			$('.nanometer').val(convert_mcromter_nanometer);
+			var convert_mcromter_centimeter = parseFloat(val)/10000;
+			$('.centimeter').val(convert_mcromter_centimeter);
+			var convert_mcromter_angstrom = parseFloat(val) * 10000;
+			$('.angstrom').val(convert_mcromter_angstrom);
+		}
+</script>
+
+	<script>
+		function decimeter(val) 
+		{
+			var convert_decimter_klmter = parseFloat(val)/10000;
+			$('.kilometer').val(convert_decimter_klmter);
+			var convert_decimter_milimter = parseFloat(val)*100;
+			$('.milimeter').val(convert_decimter_milimter);
+			var convert_decimter_mter = parseFloat(val) / 10;
+			$('.meter').val(convert_decimter_mter);
+			var convert_decimter_mcromter = parseFloat(val) * 100000;
+			$('.micrometer').val(convert_decimter_mcromter);
+			var convert_decimter_nanometer = parseFloat(val) * 100000000;
+			$('.nanometer').val(convert_decimter_nanometer);
+			var convert_decimter_centimeter = parseFloat(val)*10;
+			$('.centimeter').val(convert_decimter_centimeter);
+			var convert_decimter_angstrom = parseFloat(val) * 1000000000;
+			$('.angstrom').val(convert_decimter_angstrom);
+		}
+</script>
+
+	<script>
+		function nanometer(val) 
+		{
+			var convert_nanometer_klmter = parseFloat(val)/1000000000000;
+			$('.kilometer').val(convert_nanometer_klmter);
+			var convert_nanometer_milimter = parseFloat(val)/1000000;
+			$('.milimeter').val(convert_nanometer_milimter);
+			var convert_nanometer_mter = parseFloat(val) / 1000000000;
+			$('.meter').val(convert_nanometer_mter);
+			var convert_nanometer_decimter = parseFloat(val) / 100000000;
+			$('.decimeter').val(convert_nanometer_decimter);
+			var convert_nanometer_mcromter = parseFloat(val) / 1000;
+			$('.micrometer').val(convert_nanometer_mcromter);
+			var convert_nanometer_centimeter = parseFloat(val)/10000000;
+			$('.centimeter').val(convert_nanometer_centimeter);
+			var convert_nanometer_angstrom = parseFloat(val) * 10;
+			$('.angstrom').val(convert_nanometer_angstrom);
+		}
+</script>
+
+	<script>
+		function centimeter(val) 
+		{
+			var convert_cntimeter_klmter = parseFloat(val)/100000;
+			$('.kilometer').val(convert_cntimeter_klmter);
+			var convert_cntimeter_milimter = parseFloat(val)*10;
+			$('.milimeter').val(convert_cntimeter_milimter);
+			var convert_cntimeter_mter = parseFloat(val) / 100;
+			$('.meter').val(convert_cntimeter_mter);
+			var convert_cntimeter_decimter = parseFloat(val) / 10;
+			$('.decimeter').val(convert_cntimeter_decimter);
+			var convert_cntimeter_mcromter = parseFloat(val) *10000;
+			$('.micrometer').val(convert_cntimeter_mcromter);
+			var convert_cntimeter_nanometer = parseFloat(val)/10000000;
+			$('.nanometer').val(convert_cntimeter_nanometer);
+			var convert_cntimeter_angstrom = parseFloat(val)/100000000;
+			$('.angstrom').val(convert_cntimeter_angstrom);
+		}
+</script>
+
+	<script>
+		function angstrom(val) 
+		{
+			var convert_angstrom_klmter = parseFloat(val)/10000000000000;
+			$('.kilometer').val(convert_angstrom_klmter);
+			var convert_angstrom_milimter = parseFloat(val)/10000000;
+			$('.milimeter').val(convert_angstrom_milimter);
+			var convert_angstrom_mter = parseFloat(val) / 10000000000;
+			$('.meter').val(convert_angstrom_mter);
+			var convert_angstrom_decimter = parseFloat(val) / 1000000000;
+			$('.decimeter').val(convert_angstrom_decimter);
+			var convert_angstrom_mcromter = parseFloat(val) /10000;
+			$('.micrometer').val(convert_angstrom_mcromter);
+			var convert_angstrom_nanometer = parseFloat(val)/100;
+			$('.nanometer').val(convert_angstrom_nanometer);
+			var convert_angstrom_angstrom = parseFloat(val)/100000000;
+			$('.centimeter').val(convert_angstrom_angstrom);
 		}
 </script>
   </body>
