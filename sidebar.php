@@ -63,7 +63,7 @@
 				  <li><a href="volume_metric.php">Metric</a></li>
 				  <li><a href="volume_us_liquid_measure.php">U.S. Liquid Measure</a></li>
 				  <li><a href="volume_us_dry_measure.php">U.S. Dry Measure</a></li>
-				  <li><a href="volume_british_imperial.php">British Imperial Liquid And Dry</a></li>
+				  <!-- <li><a href="volume_british_imperial.php">British Imperial Liquid And Dry</a></li> -->
 				  <li><a href="volume_british_derivatives.php">British and U.S. derivatives of length units</a></li>
 			  </ul>
 			  <a class="btn btn-secondary btn-block btn_hide_3" style="background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);center;color:white;font-weight:bold;" onclick="show_more_3();">Show More</a>
@@ -71,7 +71,7 @@
 				  <li><a href="volume_metric.php">Metric</a></li>
 				  <li><a href="volume_us_liquid_measure.php">U.S. Liquid Measure</a></li>
 				  <li><a href="volume_us_dry_measure.php">U.S. Dry Measure</a></li>
-				  <li><a href="volume_british_imperial.php">British Imperial Liquid And Dry</a></li>
+				  <!-- <li><a href="volume_british_imperial.php">British Imperial Liquid And Dry</a></li> -->
 				  <li><a href="volume_british_derivatives.php">British and U.S. derivatives of length units</a></li>
 				  <li><a href="volume_english_wine_cask.php">English wine cask units</a></li>
 				  <li><a href="volume_cooking_us.php">Cooking (U.S.)</a></li>
