@@ -1,3 +1,5 @@
+<?php $page_name = BASENAME($_SERVER['PHP_SELF']); ?>
+
 <nav class="navbar navbar-expand-lg mai-sub-header" style="border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
 <div class="container">
   <!-- Mega Menu structure-->
@@ -23,38 +25,38 @@
 
 		  <ul class="mai-nav-tabs-sub mai-sub-nav nav">
 			<li class="nav-item">
-			  <a href="index.php" class="nav-link">
+			  <a href="index.php" class="nav-link <?php if($page_name == 'index.php') { ?>active<?php } ?>">
 				<span class="name">Home
 				</span>
 			  </a>
 			</li>
 
 			<li class="nav-item">
-			  <a href="hscode.php" class="nav-link active">
+			  <a href="hscode.php" class="nav-link <?php if($page_name == 'hscode.php') { ?>active<?php } ?>">
 				<span class="name">HS Codes
 				</span>
 			  </a>
 			</li>
 			<li class="nav-item">
-			  <a href="weight_metric.php" class="nav-link">
+			  <a href="weight_metric.php" class="nav-link <?php if($page_name == 'weight_apothecaries.php' || $page_name == 'weight_avoirdupois.php' || $page_name == 'weight_chinese_units_1915_before_1930.php' || $page_name == 'weight_chinese_units_1930_and_1959.php' || $page_name == 'weight_chinese_units_1959.php' || $page_name == 'weight_hong.php' || $page_name == 'weight_japanese.php' || $page_name == 'weight_metric.php' || $page_name == 'weight_thai.php' || $page_name == 'weight_troy.php' ) { ?>active<?php } ?>">
 				<span class="name">Weight Mass
 				</span>
 			  </a>
 			</li>
 			<li class="nav-item">
-			  <a href="length_dist_metric.php" class="nav-link">
+			  <a href="length_dist_metric.php" class="nav-link <?php if($page_name == 'length_dist_metric.php') { ?>active<?php } ?>">
 				<span class="name">Length Distance
 				</span>
 			  </a>
 			</li>
 			<li class="nav-item">
-			  <a href="volume_metric.php" class="nav-link">
+			  <a href="volume_metric.php" class="nav-link <?php if($page_name == 'volume_astronomical.php' || $page_name == 'volume_british_derivatives.php' || $page_name == 'volume_british_imperial.php' || $page_name == 'volume_chinese_units_1915.php' || $page_name == 'volume_chinese_units_1930.php' || $page_name == 'volume_cooking_international.php' || $page_name == 'volume_cooking_australian.php' || $page_name == 'volume_cooking_us.php' || $page_name == 'volume_english_wine_cask.php' || $page_name == 'volume_japanese.php' || $page_name == 'volume_lumber.php' || $page_name == 'volume_metric.php' || $page_name == 'volume_natural_units.php' || $page_name == 'volume_ship_tonnage.php' || $page_name == 'volume_thai.php' || $page_name == 'volume_us_dry_measure.php' || $page_name == 'volume_us_liquid_measure.php' ) { ?>active<?php } ?>">
 				<span class="name">Capacity & Volume
 				</span>
 			  </a>
 			</li>
 			<li class="nav-item">
-			  <a href="temp_convert.php" class="nav-link">
+			  <a href="temp_convert.php" class="nav-link <?php if($page_name == 'temp_convert.php' || $page_name == 'temp_historical.php') { ?>active<?php } ?>">
 				<span class="name"> Temperature
 				</span>
 			  </a>
