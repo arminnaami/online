@@ -29,6 +29,11 @@
         border-radius: .25rem;
         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
       }
+	  .form-control-xs::-webkit-inner-spin-button, 
+	  .form-control-xs::-webkit-outer-spin-button { 
+		  -webkit-appearance: none; 
+		  margin: 0; 
+		}
     </style>
   </head>
   <body>
@@ -51,7 +56,9 @@
                 </span>
               </div>
             </div>
-
+			<div class="panel panel-default" style="background:white;height:100px;padding:10px;background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);margin-bottom:20px;">
+				<h1 style="text-align:center;color:white;font-weight:bold;padding:25px;">Ad Block</h1>
+			</div>
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;">
                 <h4>English wine cask units</h4>
@@ -66,14 +73,14 @@
                       <label>tun</label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs tun" onkeyup="from_tun();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                     <div class="col-sm-3">
                       <label>hogshead
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs hogshead" onkeyup="from_hogshead();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                   <div class="form-group inline row">
@@ -82,14 +89,14 @@
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs butt" onkeyup="from_butt();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                     <div class="col-sm-3">
                       <label>tierce
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs tierce" onkeyup="from_tierce();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                   <div class="form-group inline row">
@@ -98,14 +105,14 @@
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs puncheon" onkeyup="from_puncheon();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                     <div class="col-sm-3">
                       <label>barrel
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs barrel" onkeyup="from_barrel();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                   <div class="form-group inline row">
@@ -114,13 +121,15 @@
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs rundlet" onkeyup="from_rundlet();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                 </form>
               </div>
             </div>
-
+			<div class="panel panel-default" style="background:white;height:100px;padding:10px;background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);margin-bottom:20px;">
+				<h1 style="text-align:center;color:white;font-weight:bold;padding:25px;">Ad Block</h1>
+			</div>
 		 </div>
             <?php include("right_sidebar.php");?>
           <!--Date Picker-->
@@ -146,5 +155,179 @@
       }
                        );
     </script>
+	<script>
+	function from_tun()
+	{
+		var tun = $(".tun").val();
+
+		var hogshead = tun * 4;
+		$(".hogshead").val(hogshead);
+
+		var butt = tun * 2;
+		$(".butt").val(butt);
+
+		var tierce = tun * 6;
+		$(".tierce").val(tierce);
+
+		var puncheon = tun * 3;
+		$(".puncheon").val(puncheon);
+
+		var barrel = tun * 8;
+		$(".barrel").val(barrel);
+
+		var rundlet = tun * 14;
+		$(".rundlet").val(rundlet);
+	}
+	</script>
+
+	<script>
+	function from_hogshead()
+	{
+		var hogshead = $(".hogshead").val();
+
+		var tun = hogshead * 0.25;
+		$(".tun").val(tun);
+
+		var butt = hogshead * 0.5;
+		$(".butt").val(butt);
+
+		var tierce = hogshead * 1.5;
+		$(".tierce").val(tierce);
+
+		var puncheon = hogshead * 0.75;
+		$(".puncheon").val(puncheon);
+
+		var barrel = hogshead * 2;
+		$(".barrel").val(barrel);
+
+		var rundlet = hogshead * 3.5;
+		$(".rundlet").val(rundlet);
+	}
+	</script>
+
+	<script>
+	function from_butt()
+	{
+		var butt = $(".butt").val();
+
+		var tun = butt * 0.5;
+		$(".tun").val(tun);
+
+		var hogshead = butt * 2;
+		$(".hogshead").val(hogshead);
+
+		var tierce = butt * 3;
+		$(".tierce").val(tierce);
+
+		var puncheon = butt * 1.5;
+		$(".puncheon").val(puncheon);
+
+		var barrel = butt * 4;
+		$(".barrel").val(barrel);
+
+		var rundlet = butt * 7;
+		$(".rundlet").val(rundlet);
+	}
+	</script>
+
+	<script>
+	function from_tierce()
+	{
+		var tierce = $(".tierce").val();
+
+		var tun = tierce * 0.1667;
+		$(".tun").val(tun);
+
+		var hogshead = tierce * 0.6667;
+		$(".hogshead").val(hogshead);
+
+		var butt = tierce * 0.3333;
+		$(".butt").val(butt);
+
+		var puncheon = tierce * 0.5;
+		$(".puncheon").val(puncheon);
+
+		var barrel = tierce * 1.333;
+		$(".barrel").val(barrel);
+
+		var rundlet = tierce * 2.333;
+		$(".rundlet").val(rundlet);
+	}
+	</script>
+
+	<script>
+	function from_puncheon()
+	{
+		var puncheon = $(".puncheon").val();
+
+		var tun = puncheon * 0.3333;
+		$(".tun").val(tun);
+
+		var hogshead = puncheon * 1.333;
+		$(".hogshead").val(hogshead);
+
+		var butt = puncheon * 0.6667;
+		$(".butt").val(butt);
+
+		var tierce = puncheon * 2;
+		$(".tierce").val(tierce);
+
+		var barrel = puncheon * 2.667;
+		$(".barrel").val(barrel);
+
+		var rundlet = puncheon * 4.667;
+		$(".rundlet").val(rundlet);
+	}
+	</script>
+
+	<script>
+	function from_barrel()
+	{
+		var barrel = $(".barrel").val();
+
+		var tun = barrel * 0.125;
+		$(".tun").val(tun);
+
+		var hogshead = barrel * 0.5;
+		$(".hogshead").val(hogshead);
+
+		var butt = barrel * 0.25;
+		$(".butt").val(butt);
+
+		var tierce = barrel * 0.75;
+		$(".tierce").val(tierce);
+
+		var puncheon = barrel * 0.375;
+		$(".puncheon").val(puncheon);
+
+		var rundlet = barrel * 1.75;
+		$(".rundlet").val(rundlet);
+	}
+	</script>
+
+	<script>
+	function from_rundlet()
+	{
+		var rundlet = $(".rundlet").val();
+
+		var tun = rundlet * 0.07143;
+		$(".tun").val(tun);
+
+		var hogshead = rundlet * 0.2857;
+		$(".hogshead").val(hogshead);
+
+		var butt = rundlet * 0.1429;
+		$(".butt").val(butt);
+
+		var tierce = rundlet * 0.4286;
+		$(".tierce").val(tierce);
+
+		var puncheon = rundlet * 0.2143;
+		$(".puncheon").val(puncheon);
+
+		var barrel = rundlet * 0.5714;
+		$(".barrel").val(barrel);
+	}
+	</script>
   </body>
 </html>
