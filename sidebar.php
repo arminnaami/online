@@ -20,8 +20,8 @@ color:blue;
 			  <div class="pricing-table-price panel-subtitle panel-heading-divider text-left" style="padding:10px;border-top:1px solid #e6e5e5;background:#fafafa;"><h4>Length and Distance</h4></div>
 			  <ul class="hide_2" style="margin-left:-12px;">
 				  <li><a href="length_dist_metric.php"  class=" <?php if($page_name == 'length_dist_metric.php') { ?>selected_link<?php } ?>">Metric</a></li>
-				  <li><a href="length_dist_international_nautical.php"  class=" <?php if($page_name == 'length_dist_international_nautical.php') { ?>selected_link<?php } ?>">International Nautical Measure</a></li>
-				   <li><a href="length_dist_us_nautical.php"  class=" <?php if($page_name == 'length_dist_us_nautical.php') { ?>selected_link<?php } ?>">US Nautical Measure</a></li>
+				  <li><a href="length_dist_international_nautical.php"  class=" <?php if($page_name == 'length_dist_international_nautical.php') { ?> selected_link <?php } ?>">International Nautical Measure</a></li>
+				  <li><a href="length_dist_us_nautical.php"  class=" <?php if($page_name == 'length_dist_us_nautical.php') { ?>selected_link<?php } ?>">US Nautical Measure</a></li>
 				  <li><a href="length_dist_british_imperial_nautical.php"  class=" <?php if($page_name == 'length_dist_british_imperial_nautical.php') { ?>selected_link<?php } ?>">British (Imperial) Nautical Measure</a></li>
 				  <li><a href="length_dist_japanese.php"  class=" <?php if($page_name == 'length_dist_japanese.php') { ?>selected_link<?php } ?>">Japanese</a></li>
 				  <li><a href="length_dist_chinese_units_1930.php"  class=" <?php if($page_name == 'length_dist_chinese_units_1930.php') { ?>selected_link<?php } ?>">Chinese units of 1930</a></li>
