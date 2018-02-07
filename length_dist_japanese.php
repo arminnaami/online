@@ -31,6 +31,13 @@
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	}
 	</style>
+
+	<style> .form-control-xs::-webkit-inner-spin-button, 
+    .form-control-xs::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+   }
+</style>
   </head>
   <body>
 	<div class="mai-wrapper">
@@ -62,13 +69,13 @@
 					 <label>ri</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs jap_ri" onkeyup="jap_ri(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
 					<div class="col-sm-3">
 					 <label>shaku</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs jap_shaku" onkeyup="jap_shaku(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
 
@@ -77,13 +84,13 @@
 					 <label>cho</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs jap_cho" onkeyup="jap_cho(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
 					<div class="col-sm-3">
 					 <label>sun</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs jap_sun" onkeyup="jap_sun(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
 
@@ -92,43 +99,13 @@
 					 <label>jo</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs jap_jo" onkeyup="jap_jo(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
 					<div class="col-sm-3">
 					 <label>bu</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>hiro</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>rin</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>ken</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>mo</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs jap_bu">
                     </div>
                   </div>
                 </form>
@@ -160,5 +137,105 @@
       }
     );
     </script>
+
+		<script>
+		function jap_ri(val) 
+		{
+			var convert_jap_ri_jap_shaku = parseFloat(val)*12960.396039604;
+			$('.jap_shaku').val(convert_jap_ri_jap_shaku);
+
+			var convert_jap_ri_jap_cho = parseFloat(val)*36;
+			$('.jap_cho').val(convert_jap_ri_jap_cho);
+
+			var convert_jap_ri_jap_sun = parseFloat(val)*129600;
+			$('.jap_sun').val(convert_jap_ri_jap_sun);
+
+			var convert_jap_ri_jap_jo = parseFloat(val)*1296;
+			$('.jap_jo').val(convert_jap_ri_jap_jo);
+
+			var convert_jap_ri_jap_bu = parseFloat(val)*1296000;
+			$('.jap_bu').val(convert_jap_ri_jap_bu);
+		}
+	</script>
+
+	<script>
+		function jap_shaku(val) 
+		{
+			var convert_jap_shaku_jap_ri = parseFloat(val)*0.000077158135981665;
+			$('.jap_ri').val(convert_jap_shaku_jap_ri);
+
+			var convert_jap_shaku_jap_cho = parseFloat(val)*0.000003333;
+			$('.jap_cho').val(convert_jap_shaku_jap_cho);
+
+			var convert_jap_shaku_jap_sun = parseFloat(val)*8463.687150838;
+			$('.jap_sun').val(convert_jap_shaku_jap_sun);
+
+			var convert_jap_shaku_jap_jo = parseFloat(val)*0.02;
+			$('.jap_jo').val(convert_jap_shaku_jap_jo);
+
+			var convert_jap_shaku_jap_bu = parseFloat(val)/100;
+			$('.jap_bu').val(convert_jap_shaku_jap_bu);
+		}
+	</script>
+
+		<script>
+		function jap_cho(val) 
+		{
+			var convert_jap_cho_jap_ri = parseFloat(val)*0.02778;
+			$('.jap_ri').val(convert_jap_cho_jap_ri);
+
+			var convert_jap_cho_jap_shaku = parseFloat(val)*360;
+			$('.jap_shaku').val(convert_jap_cho_jap_shaku);
+
+			var convert_jap_cho_jap_sun = parseFloat(val)*3600;
+			$('.jap_sun').val(convert_jap_cho_jap_sun);
+
+			var convert_jap_cho_jap_jo = parseFloat(val)*36;
+			$('.jap_jo').val(convert_jap_cho_jap_jo);
+
+			var convert_jap_cho_jap_bu = parseFloat(val)*36000;
+			$('.jap_bu').val(convert_jap_cho_jap_bu);
+		}
+	</script>
+
+	<script>
+		function jap_sun(val) 
+		{
+			var convert_jap_sun_jap_ri = parseFloat(val)*0.000007716;
+			$('.jap_ri').val(convert_jap_sun_jap_ri);
+
+			var convert_jap_sun_jap_shaku = parseFloat(val)/10;
+			$('.jap_shaku').val(convert_jap_sun_jap_shaku);
+
+			var convert_jap_sun_jap_cho = parseFloat(val)*0.0002778;
+			$('.jap_cho').val(convert_jap_sun_jap_cho);
+
+			var convert_jap_sun_jap_jo = parseFloat(val)/100;
+			$('.jap_jo').val(convert_jap_sun_jap_jo);
+
+			var convert_jap_sun_jap_bu = parseFloat(val)*10;
+			$('.jap_bu').val(convert_jap_sun_jap_bu);
+		}
+	</script>
+
+	<script>
+		function jap_jo(val) 
+		{
+			var convert_jap_jo_jap_ri = parseFloat(val)/1296;
+			$('.jap_ri').val(convert_jap_jo_jap_ri);
+
+			var convert_jap_jo_jap_shaku = parseFloat(val)*50;
+			$('.jap_shaku').val(convert_jap_jo_jap_shaku);
+
+			var convert_jap_jo_jap_cho = parseFloat(val)*0.0001667;
+			$('.jap_cho').val(convert_jap_jo_jap_cho);
+
+			var convert_jap_jo_jap_sun = parseFloat(val)*100;
+			$('.jap_sun').val(convert_jap_jo_jap_sun);
+
+			var convert_jap_sun_jap_bu = parseFloat(val)*10;
+			$('.jap_bu').val(convert_jap_sun_jap_bu);
+		}
+	</script>
   </body>
 </html>

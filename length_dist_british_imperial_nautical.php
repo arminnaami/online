@@ -78,7 +78,7 @@
 					 <label>Admiralty cable length</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="number" class="boots_form-control form-control-xs ad_cable_lenght">
+                      <input type="number" class="boots_form-control form-control-xs ad_cable_lenght"  onkeyup="ad_cable_length(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                 </form>
@@ -114,17 +114,17 @@
 		<script>
 		function ad_mile(val) 
 		{
-
+		
 			var convert_ad_mile_ad_cable_length = parseFloat(val)*10;
 			$('.ad_cable_lenght').val(convert_ad_mile_ad_cable_length);
 		}
 	</script>
 
-		<script>
-		function ad_mile(val) 
+	<script>
+		function ad_cable_length(val) 
 		{
-			var convert_us_fathom_us_cable_length = parseFloat(val)/100;
-			$('.us_cable_length').val(convert_us_fathom_us_cable_length);
+			var convert_ad_cable_length_ad_mile = parseFloat(val)/10;
+			$('.ad_mile').val(convert_ad_cable_length_ad_mile);
 		}
 	</script>
   </body>
