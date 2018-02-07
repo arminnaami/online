@@ -30,6 +30,11 @@
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	}
+	.form-control-xs::-webkit-inner-spin-button, 
+	   .form-control-xs::-webkit-outer-spin-button { 
+		-webkit-appearance: none; 
+		margin: 0; 
+	  }
 	</style>
   </head>
   <body>
@@ -62,13 +67,13 @@
 					 <label>kan,&nbsp;kanme</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs kan" onkeyup="kan(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
 					<div class="col-sm-3">
 					 <label>hyakume</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs hyakume" onkeyup="hyakume(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
 
@@ -77,13 +82,13 @@
 					 <label>kin</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs kin" onkeyup="kin(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
 					<div class="col-sm-3">
-					 <label>monnme</label>
+					 <label>momme</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs momme" onkeyup="momme(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
 
@@ -92,7 +97,7 @@
 					 <label>fun</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs fun" onkeyup="fun(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                 </form>
@@ -123,5 +128,62 @@
       }
     );
     </script>
+	<script>
+		function kan(kan){
+			var kan = parseFloat(kan);
+		  var convert_kan_hyakume = kan*10.00;
+			$('.hyakume').val(convert_kan_hyakume);
+		  var convert_kan_kin = kan*6.250;
+			$('.kin').val(convert_kan_kin);
+		  var convert_kan_momme = kan*1000;
+			$('.momme').val(convert_kan_momme);
+		  var convert_kan_fun = kan*1.000e+4;
+			$('.fun').val(convert_kan_fun);
+		}
+		function hyakume(hyakume){
+			var hyakume = parseFloat(hyakume);
+		  var convert_hyakume_kan = hyakume*10.00;
+			$('.kan').val(convert_hyakume_kan);
+		  var convert_hyakume_kin = hyakume*6.250;
+			$('.kin').val(convert_hyakume_kin);
+		  var convert_hyakume_momme = hyakume*1000;
+			$('.momme').val(convert_hyakume_momme);
+		  var convert_hyakume_fun = hyakume*1.000e+4;
+			$('.fun').val(convert_hyakume_fun);
+		}
+		function kan(kan){
+			var kan = parseFloat(kan);
+		  var convert_kan_hyakume = kan*10.00;
+			$('.hyakume').val(convert_kan_hyakume);
+		  var convert_kan_kin = kan*6.250;
+			$('.kin').val(convert_kan_kin);
+		  var convert_kan_momme = kan*1000;
+			$('.momme').val(convert_kan_momme);
+		  var convert_kan_fun = kan*1.000e+4;
+			$('.fun').val(convert_kan_fun);
+		}
+		function kan(kan){
+			var kan = parseFloat(kan);
+		  var convert_kan_hyakume = kan*10.00;
+			$('.hyakume').val(convert_kan_hyakume);
+		  var convert_kan_kin = kan*6.250;
+			$('.kin').val(convert_kan_kin);
+		  var convert_kan_momme = kan*1000;
+			$('.momme').val(convert_kan_momme);
+		  var convert_kan_fun = kan*1.000e+4;
+			$('.fun').val(convert_kan_fun);
+		}
+		function kan(kan){
+			var kan = parseFloat(kan);
+		  var convert_kan_hyakume = kan*10.00;
+			$('.hyakume').val(convert_kan_hyakume);
+		  var convert_kan_kin = kan*6.250;
+			$('.kin').val(convert_kan_kin);
+		  var convert_kan_momme = kan*1000;
+			$('.momme').val(convert_kan_momme);
+		  var convert_kan_fun = kan*1.000e+4;
+			$('.fun').val(convert_kan_fun);
+		}
+	</script>
   </body>
 </html>
