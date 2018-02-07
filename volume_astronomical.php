@@ -29,6 +29,11 @@
         border-radius: .25rem;
         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
       }
+	  .form-control-xs::-webkit-inner-spin-button, 
+	  .form-control-xs::-webkit-outer-spin-button { 
+		  -webkit-appearance: none; 
+		  margin: 0; 
+		}
     </style>
   </head>
   <body>
@@ -51,7 +56,9 @@
                 </span>
               </div>
             </div>
-			
+			<div class="panel panel-default" style="background:white;height:100px;padding:10px;background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);margin-bottom:20px;">
+				<h1 style="text-align:center;color:white;font-weight:bold;padding:25px;">Ad Block</h1>
+			</div>
  
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;">
@@ -66,14 +73,14 @@
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs parsec" onkeyup="from_parsec();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                     <div class="col-sm-3">
                       <label>cubic light minute
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs minute" onkeyup="from_minute();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                   <div class="form-group inline row">
@@ -82,19 +89,22 @@
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs year" onkeyup="from_year();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                     <div class="col-sm-3">
                       <label>cubic light second
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs second" onkeyup="from_second();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                 </form>
               </div>
             </div>
+			<div class="panel panel-default" style="background:white;height:100px;padding:10px;background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);margin-bottom:20px;">
+				<h1 style="text-align:center;color:white;font-weight:bold;padding:25px;">Ad Block</h1>
+			</div>
 		 </div>
            <?php include("right_sidebar.php");?>
           <!--Date Picker-->
@@ -120,5 +130,68 @@
       }
                        );
     </script>
+	<script>
+	function from_parsec()
+	{
+		var parsec = $(".parsec").val();
+
+		var minute = parsec * 5.048191e+18;
+		$(".minute").val(minute);
+
+		var year = parsec * 34.7;
+		$(".year").val(year);
+
+		var second = parsec * 1.09e+24;
+		$(".second").val(second);
+	}
+	</script>
+
+	<script>
+	function from_minute()
+	{
+		var minute = $(".minute").val();
+
+		var parsec = minute * 1.981e-19;
+		$(".parsec").val(parsec);
+
+		var year = minute * 6.873e-18;
+		$(".year").val(year);
+
+		var second = minute * 216000;
+		$(".second").val(second);
+	}
+	</script>
+
+	<script>
+	function from_year()
+	{
+		var year = $(".year").val();
+
+		var parsec = year * 0.02882;
+		$(".parsec").val(parsec);
+
+		var minute = year * 1.4549838e+17;
+		$(".minute").val(minute);
+
+		var second = year * 3.143e+22;
+		$(".second").val(second);
+	}
+	</script>
+
+	<script>
+	function from_second()
+	{
+		var second = $(".second").val();
+
+		var parsec = second * 9.171e-25;
+		$(".parsec").val(parsec);
+
+		var minute = second * 0.00000463;
+		$(".minute").val(minute);
+
+		var year = second * 3.182e-23;
+		$(".year").val(year);
+	}
+	</script>
   </body>
 </html>

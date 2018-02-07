@@ -77,7 +77,6 @@ color:blue;
 				  <li><a href="volume_cooking_us.php" class=" <?php if($page_name == 'volume_cooking_us.php') { ?>selected_link<?php } ?>">Cooking (U.S.)</a></li>
 				  <li><a href="volume_cooking_international.php" class=" <?php if($page_name == 'volume_cooking_international.php') { ?>selected_link<?php } ?>">Cooking (International)</a></li>
 				  <li><a href="volume_cooking_australian.php" class=" <?php if($page_name == 'volume_cooking_australian.php') { ?>selected_link<?php } ?>">Cooking (Australian)</a></li>
-				  <li><a href="volume_natural_units.php" class=" <?php if($page_name == 'volume_natural_units.php') { ?>selected_link<?php } ?>">Natural units</a></li>
 				  <li><a href="volume_astronomical.php" class=" <?php if($page_name == 'volume_astronomical.php') { ?>selected_link<?php } ?>">Astronomical</a></li>
 				  <li><a href="volume_ship_tonnage.php" class=" <?php if($page_name == 'volume_ship_tonnage.php') { ?>selected_link<?php } ?>">Ship tonnage measurements</a></li>
 				  <li><a href="volume_lumber.php" class=" <?php if($page_name == 'volume_lumber.php') { ?>selected_link<?php } ?>">Lumber measure</a></li>
