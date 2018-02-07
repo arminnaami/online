@@ -49,7 +49,15 @@
 	<!-- sidebar end -->
             
 		<div class="col-md-6">
+
+			<div class="row">
+				<div class="panel panel-default panel-table" style="width:100%;background:none;border:0px;box-shadow:none;padding:14px 15px;margin:0px;">
+					 <a href="#" target="ESEA" style="float:left;width:100%;"><img src="images/images.jpg"  alt="ESEA" title="ESEA" border="0" style="width:100%;"></a>
+					 <a href="#" target="ESEA" style="float:right;width:100%;"><img src="images/Doctor-Banner-Ad-Horizontal.png" alt="ESEA" title="ESEA" border="0" style="width:100%;"></a>
+				</div>
+			</div>
 		   <div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
+			
               <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Convert Weight and Mass Units Instantly</h4></div>
               <div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
 				<span class="" >This converter features units that are still used today. There is also a special converter for historical units of weight you might want to visit for ancient, medieval and other old units that are no longer used.</span>

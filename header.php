@@ -44,7 +44,7 @@
 			  </a>
 			</li>
 			<li class="nav-item">
-			  <a href="length_dist_metric.php" class="nav-link <?php if($page_name == 'length_dist_metric.php') { ?>active<?php } ?>">
+			  <a href="length_dist_metric.php" class="nav-link <?php if($page_name == 'length_dist_american_system_of_measures.php' || $page_name == 'length_dist_astronomical.php' || $page_name == 'length_dist_british_imperial.php' || $page_name == 'length_dist_british_imperial_nautical.php' || $page_name == 'length_dist_chinese_units_1915.php' || $page_name == 'length_dist_chinese_units_1930.php' || $page_name == 'length_dist_computer_equipment.php' || $page_name == 'length_dist_european_footwear.php' || $page_name == 'length_dist_geographical_german.php' || $page_name == 'length_dist_grace_hopper.php' || $page_name == 'length_dist_hong_kong_units.php' || $page_name == 'length_dist_international_nautical.php' || $page_name == 'length_dist_japanese.php' || $page_name == 'length_dist_metric.php' || $page_name == 'length_dist_natural_units.php' || $page_name == 'length_dist_optical.php' | $page_name == 'length_dist_spanish_customary_units.php' || $page_name == 'length_dist_thai_units.php' || $page_name == 'length_dist_typographical_ATA_system.php' || $page_name == 'length_dist_typographical_Didot_system.php' || $page_name == 'length_dist_us_nautical.php' || $page_name == 'length_dist_us_surveyors.php') { ?>active<?php } ?>">
 				<span class="name">Length Distance
 				</span>
 			  </a>
