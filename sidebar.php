@@ -7,7 +7,6 @@
 				  <li><a href="weight_avoirdupois.php">Avoirdupois (U.S. / British)</a></li>
 				  <li><a href="weight_troy.php">Troy</a></li>
 				  <li><a href="weight_apothecaries.php">Apothecaries</a></li>
-				  <li><a href="weight_natural_units.php">Natural units</a></li>
 			  </ul>
 			  <a class="btn btn-secondary btn-block btn_hide_1" style="background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);center;color:white;font-weight:bold;" onclick="show_more_1();">Show More</a>
 			  <ul class="show_1" style="margin-left:-12px;padding-bottom:0px;display:none;">
@@ -15,11 +14,6 @@
 				  <li><a href="weight_avoirdupois.php">Avoirdupois (U.S. / British)</a></li>
 				  <li><a href="weight_troy.php">Troy</a></li>
 				  <li><a href="weight_apothecaries.php">Apothecaries</a></li>
-				  <li><a href="weight_natural_units.php">Natural units</a></li>
-				  <li><a href="weight_japanese.php">Japanese</a></li>
-				  <li><a href="weight_chinese_units_1959.php">Chinese units since 1959</a></li>
-				  <li><a href="weight_chinese_units_1930_and_1959.php">Chinese units between 1930 and 1959</a></li>
-				  <li><a href="weight_Chinese_units_1915_before_1930.php">Chinese units of 1915 before 1930</a></li>
 				  <li><a href="weight_thai.php">Thai units</a></li>
 				  <li><a href="weight_hong.php">Hong Kong</a></li>
 			  </ul>
