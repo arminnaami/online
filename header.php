@@ -25,7 +25,7 @@
 
 		  <ul class="mai-nav-tabs-sub mai-sub-nav nav">
 			<li class="nav-item">
-			  <a href="index.php" class="nav-link <?php if($page_name == 'index.php') { ?>active<?php } ?>">
+			  <a href="javascript:void(0);" class="nav-link <?php if($page_name == 'index.php') { ?>active<?php } ?>">
 				<span class="name">Home
 				</span>
 			  </a>
