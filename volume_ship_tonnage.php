@@ -29,7 +29,7 @@
         border-radius: .25rem;
         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
       }
-	   .form-control-xs::-webkit-inner-spin-button, 
+	  .form-control-xs::-webkit-inner-spin-button, 
 	  .form-control-xs::-webkit-outer-spin-button { 
 		  -webkit-appearance: none; 
 		  margin: 0; 
