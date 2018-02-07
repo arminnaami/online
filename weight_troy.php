@@ -30,6 +30,12 @@
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	}
+		 .form-control-xs::-webkit-inner-spin-button, 
+	   .form-control-xs::-webkit-outer-spin-button { 
+		-webkit-appearance: none; 
+		margin: 0; 
+	  }
+
 	</style>
   </head>
   <body>
@@ -62,13 +68,13 @@
 					 <label>pound</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs pound" onkeyup="pound(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
 					<div class="col-sm-3">
 					 <label>carat</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs carat" onkeyup="carat(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
 
@@ -77,13 +83,13 @@
 					 <label>ounce&nbsp;(ozt)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs ounce" onkeyup="ounce(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
 					<div class="col-sm-3">
 					 <label>grain</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs grain" onkeyup="grain(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
 
@@ -92,22 +98,7 @@
 					 <label>pennyweight&nbsp;(dwt)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>mite</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				   <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>doite</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs pennyweight" onkeyup="pennyweight(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                 </form>
@@ -140,5 +131,62 @@
       }
     );
     </script>
+	<script>
+		function pound(pound){
+			var pound = parseFloat(pound);
+		  var convert_pound_carat = pound/0.0005358457761438;
+			$('.carat').val(convert_pound_carat);
+		  var convert_pound_ounce = pound/0.083333333333333;
+			$('.ounce').val(convert_pound_ounce);
+		  var convert_pound_grain = pound/0.00017361111111111;
+			$('.grain').val(convert_pound_grain);
+		  var convert_pound_pennyweight = pound/0.0041666666666667;
+			$('.pennyweight').val(convert_pound_pennyweight);
+		}
+		function carat(carat){
+			var carat = parseFloat(carat);
+		  var convert_carat_pound = carat/1866.208608;
+			$('.pound').val(convert_carat_pound);
+		  var convert_carat_ounce = carat/155.517384;
+			$('.ounce').val(convert_carat_ounce);
+		  var convert_carat_grain = carat/0.32399455;
+			$('.grain').val(convert_carat_grain);
+		  var convert_carat_pennyweight = carat/7.7758692;
+			$('.pennyweight').val(convert_carat_pennyweight);
+		}
+		function ounce(ounce){
+			var ounce = parseFloat(ounce);
+		  var convert_ounce_pound = ounce/12;
+			$('.pound').val(convert_ounce_pound);
+		  var convert_ounce_carat = ounce/0.0064301493137256;
+			$('.carat').val(convert_ounce_carat);
+		  var convert_ounce_grain = ounce/0.0020833333333333;
+			$('.grain').val(convert_ounce_grain);
+		  var convert_ounce_pennyweight = ounce/0.05;
+			$('.pennyweight').val(convert_ounce_pennyweight);
+		}
+		function grain(grain){
+			var grain = parseFloat(grain);
+		  var convert_grain_pound = grain/5760;
+			$('.pound').val(convert_grain_pound);
+		  var convert_grain_carat = grain/3.0864716705883;
+			$('.carat').val(convert_grain_carat);
+		  var convert_grain_ounce = grain/480;
+			$('.ounce').val(convert_grain_ounce);
+		  var convert_grain_pennyweight = grain/24;
+			$('.pennyweight').val(convert_grain_pennyweight);
+		}
+		function pennyweight(pennyweight){
+			var pennyweight = parseFloat(pennyweight);
+		  var convert_pennyweight_pound = pennyweight/240;
+			$('.pound').val(convert_pennyweight_pound);
+		  var convert_pennyweight_carat = pennyweight/0.12860298627451;
+			$('.carat').val(convert_pennyweight_carat);
+		  var convert_pennyweight_ounce = pennyweight/20;
+			$('.ounce').val(convert_pennyweight_ounce);
+		  var convert_pennyweight_grain = pennyweight/0.041666666666667;
+			$('.grain').val(convert_pennyweight_grain);
+		}
+	</script>
   </body>
 </html>

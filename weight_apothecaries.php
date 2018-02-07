@@ -30,6 +30,11 @@
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	}
+	 .form-control-xs::-webkit-inner-spin-button, 
+	   .form-control-xs::-webkit-outer-spin-button { 
+		-webkit-appearance: none; 
+		margin: 0; 
+	  }
 	</style>
   </head>
   <body>
@@ -62,13 +67,13 @@
 					 <label>pound</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs pound" onkeyup="pound(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
 					<div class="col-sm-3">
 					 <label>dram</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs dram" onkeyup="dram(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
 
@@ -77,13 +82,13 @@
 					 <label>ounce</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs ounce" onkeyup="ounce(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
 					<div class="col-sm-3">
 					 <label>scruple</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs scruple" onkeyup="scruple(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
 
@@ -92,7 +97,7 @@
 					 <label>grain</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="text" class="boots_form-control form-control-xs grain" onkeyup="grain(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                 </form>
@@ -123,5 +128,62 @@
       }
     );
     </script>
+	<script>
+		function pound(pound){
+			var pound = parseFloat(pound);
+		  var convert_pound_dram = pound/0.010416666666667;
+			$('.dram').val(convert_pound_dram);
+		  var convert_pound_ounce = pound/0.075954861111111;
+			$('.ounce').val(convert_pound_ounce);
+		  var convert_pound_scruple = pound/0.0034722222222222;
+			$('.scruple').val(convert_pound_scruple);
+		  var convert_pound_grain = pound/0.00017361111111111;
+			$('.grain').val(convert_pound_grain);
+		}
+		function dram(dram){
+			var dram = parseFloat(dram);
+		  var convert_dram_pound = dram/116.66666666667;
+			$('.pound').val(convert_dram_pound);
+		  var convert_dram_ounce = dram/7.2916666666667;
+			$('.ounce').val(convert_dram_ounce);
+		  var convert_dram_scruple = dram/0.33333333333333;
+			$('.scruple').val(convert_dram_scruple);
+		  var convert_dram_grain = dram/0.016666666666667;
+			$('.grain').val(convert_dram_grain);
+		}
+		function ounce(ounce){
+			var ounce = parseFloat(ounce);
+		  var convert_ounce_pound = ounce/12;
+			$('.pound').val(convert_ounce_pound);
+		  var convert_ounce_dram = ounce/0.0066005482705393;
+			$('.dram').val(convert_ounce_dram);
+		  var convert_ounce_scruple = ounce/0.041666666666667;
+			$('.scruple').val(convert_ounce_scruple);
+		  var convert_ounce_grain = ounce/0.0020833333333333;
+			$('.grain').val(convert_ounce_grain);
+		}
+		function scruple(scruple){
+			var scruple = parseFloat(scruple);
+		  var convert_scruple_pound = scruple/288;
+			$('.pound').val(convert_scruple_pound);
+		  var convert_scruple_dram = scruple/3;
+			$('.dram').val(convert_scruple_dram);
+		  var convert_scruple_ounce = scruple/24;
+			$('.ounce').val(convert_scruple_ounce);
+		  var convert_scruple_grain = scruple/0.05;
+			$('.grain').val(convert_scruple_grain);
+		}
+		function grain(grain){
+			var grain = parseFloat(grain);
+		  var convert_grain_pound = grain/5760;
+			$('.pound').val(convert_grain_pound);
+		  var convert_grain_dram = grain/60;
+			$('.dram').val(convert_grain_dram);
+		  var convert_grain_ounce = grain/480;
+			$('.ounce').val(convert_grain_ounce);
+		  var convert_grain_scruple = grain/20;
+			$('.scruple').val(convert_grain_scruple);
+		}
+	</script>
   </body>
 </html>
