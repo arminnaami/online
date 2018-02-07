@@ -31,6 +31,12 @@
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	}
 	</style>
+	<style> .form-control-xs::-webkit-inner-spin-button, 
+    .form-control-xs::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+   }
+</style>
   </head>
   <body>
 	<div class="mai-wrapper">
@@ -65,13 +71,13 @@
 					 <label>US nautical mile</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs us_mautical_mile" onkeyup="us_mautical_mile(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
 					<div class="col-sm-3">
 					 <label>US cable length</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs us_cable_length" onkeyup="us_cable_length(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
 
@@ -80,7 +86,7 @@
 					 <label>US fathom (fath)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs us_fathom" onkeyup="us_fathom(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                 </form>
@@ -113,5 +119,38 @@
       }
     );
     </script>
+
+		<script>
+		function us_mautical_mile(val) 
+		{
+			var convert_us_mautical_mile_us_cable_length = parseFloat(val)*8.44;
+			$('.us_cable_length').val(convert_us_mautical_mile_us_cable_length);
+
+			var convert_n_leauge_fathom = parseFloat(val)*1012.686;
+			$('.us_fathom').val(convert_n_leauge_fathom);
+		}
+	</script>
+
+	<script>
+		function us_cable_length(val) 
+		{
+			var convert_us_cable_length_us_mautical_mile = parseFloat(val)*0.118497;
+			$('.us_mautical_mile').val(convert_us_cable_length_us_mautical_mile);
+
+			var convert_us_cable_length_fathom = parseFloat(val)*120;
+			$('.us_fathom').val(convert_us_cable_length_fathom);
+		}
+	</script>
+
+	<script>
+		function us_fathom(val) 
+		{
+			var convert_us_fathom_us_mautical_mile = parseFloat(val)*0.00098747300215983;
+			$('.us_mautical_mile').val(convert_us_fathom_us_mautical_mile);
+
+			var convert_us_fathom_us_cable_length = parseFloat(val)/100;
+			$('.us_cable_length').val(convert_us_fathom_us_cable_length);
+		}
+	</script>
   </body>
 </html>

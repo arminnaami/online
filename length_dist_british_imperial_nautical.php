@@ -31,6 +31,13 @@
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 	}
 	</style>
+
+	<style> .form-control-xs::-webkit-inner-spin-button, 
+    .form-control-xs::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+   }
+</style>
   </head>
   <body>
 	<div class="mai-wrapper">
@@ -65,13 +72,13 @@
 					 <label>Admiralty mile</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs ad_mile" onkeyup="ad_mile(this.value)" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
 					<div class="col-sm-3">
 					 <label>Admiralty cable length</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs ad_cable_lenght">
                     </div>
                   </div>
                 </form>
@@ -103,5 +110,22 @@
       }
     );
     </script>
+
+		<script>
+		function ad_mile(val) 
+		{
+
+			var convert_ad_mile_ad_cable_length = parseFloat(val)*10;
+			$('.ad_cable_lenght').val(convert_ad_mile_ad_cable_length);
+		}
+	</script>
+
+		<script>
+		function ad_mile(val) 
+		{
+			var convert_us_fathom_us_cable_length = parseFloat(val)/100;
+			$('.us_cable_length').val(convert_us_fathom_us_cable_length);
+		}
+	</script>
   </body>
 </html>
