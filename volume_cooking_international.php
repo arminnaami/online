@@ -29,6 +29,11 @@
         border-radius: .25rem;
         transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
       }
+	  .form-control-xs::-webkit-inner-spin-button, 
+	  .form-control-xs::-webkit-outer-spin-button { 
+		  -webkit-appearance: none; 
+		  margin: 0; 
+		}
     </style>
   </head>
   <body>
@@ -51,7 +56,9 @@
                 </span>
               </div>
             </div>
-			
+			<div class="panel panel-default" style="background:white;height:100px;padding:10px;background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);margin-bottom:20px;">
+				<h1 style="text-align:center;color:white;font-weight:bold;padding:25px;">Ad Block</h1>
+			</div>
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;">
                 <h4>Cooking (International)
@@ -65,14 +72,14 @@
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs cup" onkeyup="from_cup();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                     <div class="col-sm-3">
                       <label>tablespoon
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs tablespoon" onkeyup="from_tablespoon();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                   <div class="form-group inline row">
@@ -81,13 +88,15 @@
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <input type="number" class="boots_form-control form-control-xs teaspoon" onkeyup="from_teaspoon();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                 </form>
               </div>
             </div>
-
+			<div class="panel panel-default" style="background:white;height:100px;padding:10px;background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);margin-bottom:20px;">
+				<h1 style="text-align:center;color:white;font-weight:bold;padding:25px;">Ad Block</h1>
+			</div>
 		 </div>
             <?php include("right_sidebar.php");?>
           <!--Date Picker-->
@@ -113,5 +122,43 @@
       }
                        );
     </script>
+	<script>
+	function from_cup()
+	{
+		var cup = $(".cup").val();
+
+		var tablespoon = cup * 16;
+		$(".tablespoon").val(tablespoon);
+
+		var teaspoon = cup * 48;
+		$(".teaspoon").val(teaspoon);
+	}
+	</script>
+
+	<script>
+	function from_tablespoon()
+	{
+		var tablespoon = $(".tablespoon").val();
+
+		var cup = tablespoon * 0.0625;
+		$(".cup").val(cup);
+
+		var teaspoon = tablespoon * 3;
+		$(".teaspoon").val(teaspoon);
+	}
+	</script>
+
+	<script>
+	function from_teaspoon()
+	{
+		var teaspoon = $(".teaspoon").val();
+
+		var cup = teaspoon * 0.02083;
+		$(".cup").val(cup);
+
+		var tablespoon = teaspoon * 0.3333;
+		$(".tablespoon").val(tablespoon);
+	}
+	</script>
   </body>
 </html>

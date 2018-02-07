@@ -72,14 +72,14 @@
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs cup" onkeyup="from_cup();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
+                      <input type="number" class="boots_form-control form-control-xs cup" onkeyup="from_cup();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                     <div class="col-sm-3">
                       <label>tablespoon
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs tablespoon" onkeyup="from_tablespoon();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
+                      <input type="number" class="boots_form-control form-control-xs tablespoon" onkeyup="from_tablespoon();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                   <div class="form-group inline row">
@@ -88,7 +88,7 @@
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs teaspoon" onkeyup="from_teaspoon();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
+                      <input type="number" class="boots_form-control form-control-xs teaspoon" onkeyup="from_teaspoon();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                 </form>
