@@ -57,9 +57,7 @@
               </div>
             </div>
 			
-			<div class="panel panel-default" style="background:white;height:100px;padding:10px;background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);margin-bottom:20px;">
-				<h1 style="text-align:center;color:white;font-weight:bold;padding:25px;">Ad Block</h1>
-			</div>
+			<?php include("advertisement_top.php");?>
             <div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;">
                 <h4>Cooking (Australian)
@@ -95,9 +93,7 @@
                 </form>
               </div>
             </div>
-			<div class="panel panel-default" style="background:white;height:100px;padding:10px;background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);margin-bottom:20px;">
-				<h1 style="text-align:center;color:white;font-weight:bold;padding:25px;">Ad Block</h1>
-			</div>
+			<?php include("advertisement_bottom.php");?>
 		 </div>
            <?php include("right_sidebar.php");?>
           <!--Date Picker-->
