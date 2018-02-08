@@ -1,3 +1,51 @@
+<?php
+if(isset($_GET['submit']))
+{
+if(isset($_GET['convert_value']) && $_GET['convert_value'] != '')
+
+{
+	$convert_value = $_GET['convert_value'];
+	$unit = $_GET['unit'];
+	if($_GET['unit'] == 'kilometer')
+	{
+		$kilometer = $convert_value;
+		$milimeter = $convert_value *1000000;
+		$meter =  $convert_value *1000;
+		$micrometer = $convert_value *1000000000;
+		$decimeter = $convert_value *10000;
+		$nanometer = $convert_value *1000000000000;
+		$centimeter = $convert_value *100000;
+		$angstrom = $convert_value *10000000000000;
+		$american_leauge = $convert_value *0.2071;
+		$american_foot = $convert_value *3281;
+		$american_mile = $convert_value *0.6214;
+		$american_feet_inchs = $convert_value *3280;
+		$american_land = $convert_value *0.6214;
+		$american_span = $convert_value *4374;
+		$american_bolt = $convert_value *27.34;
+		$american_hand = $convert_value *9843;
+		$british_leauge = $convert_value *0.2071;
+		$british_foot  = $convert_value *3281;
+		$british_mile = $convert_value *0.6214;
+		$british_span = $convert_value *4374;
+		$british_land = $convert_value *0.6214;
+		$british_nail =  $convert_value *4374;
+		$int_nautical_leauge = $convert_value *0.18;
+		$int_nautical_mile = $convert_value *0.54;
+		$int_nautical_cable_length = $convert_value *5.4;
+		$int_nautical_fathom = $convert_value *546.8;
+		$us_nautical_mile = $convert_value *0.5396;
+		$us_nautical_cable_length = $convert_value *4.557;
+		$us_nautical_fathom = $convert_value *546.8;
+		$admirly_mile = $convert_value *0.5396;
+		$admirly_cable_length = $convert_value *5.396;
+
+		
+	}
+}
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -49,7 +97,27 @@
 		   <div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Convert Length and Distance Units Instantly</h4></div>
               <div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
-				<span class="" >This converter features units that are still used today. There is also a special converter for historical units of length you might want to visit for ancient, medieval and other old units that are no longer used.</span>
+				<span class=""> 
+				<form method ="get">
+				<div class="form-group inline row">
+					<div class="col-sm-3 ">
+					<?php
+						if(isset($_GET['unit'])){
+							$unit_name = $_GET['unit'];
+						}
+					?>
+					 <label>Your Value (<?php echo $unit_name;?>)</label>
+					</div>
+                    <div class="col-sm-4">
+                       <input type="text" name="convert_value" class="boots_form-control form-control-xs" value="1">
+					   <input type="hidden" name="unit" value="<?php echo $_GET['unit'];?>">
+                    </div>
+					<div class="col-sm-4">
+                       <input type="submit" name="submit" class="btn btn-secondary btn-block btn_show_1" style="background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);center;color:white;font-weight:bold;" value="Convert">
+                    </div>
+                  </div>
+				  </form>
+				  </span>
               </div>
             </div>
 
@@ -59,16 +127,16 @@
                 <form method = "POST">
                   <div class="form-group inline row">
 					<div class="col-sm-3">
-					 <label>kilometer (km)</label>
+					 <a href="?unit=kilometer"><label>kilometer (km)</label></a>
 					</div>
                     <div class="col-sm-3">
-                       <input type="text" class="boots_form-control form-control-xs">
+                       <p><?php echo $kilometer;?></p>
                     </div>
 					<div class="col-sm-3">
 					 <label>millimeter (mm)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $milimeter;?></p>
                     </div>
                   </div>
 
@@ -77,13 +145,13 @@
 					 <label>meter (m)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $meter;?></p>
                     </div>
 					<div class="col-sm-3">
 					 <label>micrometre (micron)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $micrometer;?></p>
                     </div>
                   </div>
 
@@ -92,13 +160,13 @@
 					 <label>decimeter (dm)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $decimeter;?></p>
                     </div>
 					<div class="col-sm-3">
 					 <label>nanometer (nm)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $nanometer;?></p>
                     </div>
                   </div>
 
@@ -107,13 +175,13 @@
 					 <label>centimeter (cm)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                       <p><?php echo $centimeter;?></p>
                     </div>
 					<div class="col-sm-3">
 					 <label>angstrom</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                       <p><?php echo $angstrom;?></p>
                     </div>
                   </div>
                 </form>
@@ -129,126 +197,70 @@
                 <form method = "POST">
                   <div class="form-group inline row">
 					<div class="col-sm-3">
-					 <label>league</label>
+					 <a href="?unit=american_leauge"><label>league</label></a>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                       <p><?php echo $american_leauge;?></p>
                     </div>
 					<div class="col-sm-3">
-					 <label>foot (ft)</label>
+					 <a href="?unit=american_foot"><label>foot (ft)</label></a>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>mile (mi)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>feet and inches (x'y")</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                       <p><?php echo $american_foot;?></p>
                     </div>
                   </div>
 
 				  <div class="form-group inline row">
 					<div class="col-sm-3">
-					 <label>land</label>
+					 <a href="?unit=american_mile"><label>mile (mi)</label></a>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                       <p><?php echo $american_mile;?></p>
                     </div>
 					<div class="col-sm-3">
-					 <label>span</label>
+					 <a href="?unit=american_feet"><label>feet and inches (x'y")</label></a>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                       <p><?php echo $american_feet_inchs;?></p>
+                    </div>
+                  </div>
+
+				  <div class="form-group inline row">
+					<div class="col-sm-3">
+					 <a href="?unit=american_land"><label>land</label></a>
+					</div>
+                    <div class="col-sm-3">
+                       <p><?php echo $american_land;?></p>
+                    </div>
+					<div class="col-sm-3">
+					 <a href="?unit=american_span"><label>span</label></a>
+					</div>
+                    <div class="col-sm-3">
+                       <p><?php echo $american_span;?></p>
                     </div>
                   </div>
 
 				   <div class="form-group inline row">
 					<div class="col-sm-3">
-					 <label>bolt</label>
+					 <a href="?unit=american_bolt"><label>bolt</label></a>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                       <p><?php echo $american_bolt;?></p>
                     </div>
 					<div class="col-sm-3">
-					 <label>hand</label>
+					 <a href="?unit=american_hand"><label>hand</label></a>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                       <p><?php echo $american_hand;?></p>
                     </div>
                   </div>
 
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>pole</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>inch (in)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				 <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>rod (rd)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>line</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
+				  
                  </div>
 
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>perch</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>mil</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                 </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>yard (yd)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>microinch</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                 </div>
                 </form>
               </div>
-            </div>
+            
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>British (Imperial) Measure</h4></div>
@@ -259,31 +271,31 @@
                 <form method = "POST">
                   <div class="form-group inline row">
 					<div class="col-sm-3">
-					 <label>league</label>
+					 <a href="unit=british_leauge"><label>league</label></a>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $british_leauge;?></p>
                     </div>
 					<div class="col-sm-3">
-					 <label>foot (ft)</label>
+					 <a href="?unit=british_foot"><label>foot (ft)</label></a>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                     <p><?php echo $british_foot;?></p>
                     </div>
                   </div>
 
 				  <div class="form-group inline row">
 					<div class="col-sm-3">
-					 <label>mile (mi)</label>
+					 <a href="?unit=british_mile"><label>mile (mi)</label></a>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $british_mile;?></p>
                     </div>
 					<div class="col-sm-3">
-					 <label>span (sp)</label>
+					 <a href=""><label>span (sp)</label></a>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $british_span;?></p>
                     </div>
                   </div>
 
@@ -292,283 +304,20 @@
 					 <label>land</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $british_land;?></p>
                     </div>
 					<div class="col-sm-3">
 					 <label>nail</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $british_nail;?></p>
                     </div>
                   </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>skein</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>shaftment</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>bolt</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>hand (hd)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>shackle</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>palm (plm)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>furlong</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>inch (in)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>chain</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>finger</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>rope</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>digit</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>pole</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>barleycorn</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>goad</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>poppyseed</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>ell</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>line</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>yard (yd)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>button</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>pace</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>caliber</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>cubit (cu)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>thou (th)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>mil</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
+		
                 </form>
               </div>
             </div>
 
-			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>US Surveyors' Measure</h4></div>
-              <div class="panel-body mai-end">
-                <form method = "POST">
-                  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>furlong</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>Gunter's (surveyors') pole</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>Ramsden's (engineers') chain (ch)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>Ramsden's (engineers') link</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				   <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>Gunter's (surveyors') chain (ch)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>Gunter's (surveyors') link</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-				  
-				   <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>Gurley's chain (ch)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>Gurley's link</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>Gunter's (surveyors') foot (ft)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>International Nautical Measure</h4></div>
@@ -582,13 +331,13 @@
 					 <label>nautical league (naut.leag)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $int_nautical_leauge;?></p>
                     </div>
 					<div class="col-sm-3">
 					 <label>cable length (cbl)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $int_nautical_cable_length;?></p>
                     </div>
                   </div>
 
@@ -597,13 +346,13 @@
 					 <label>nautical mile (naut.mi)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $int_nautical_mile;?></p>
                     </div>
 					<div class="col-sm-3">
 					 <label>fathom (fath)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $int_nautical_fathom ;?></p>
                     </div>
                   </div>
                 </form>
@@ -622,13 +371,13 @@
 					 <label>US nautical mile</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $us_nautical_mile ;?></p>
                     </div>
 					<div class="col-sm-3">
 					 <label>US cable length</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $us_nautical_cable_length ;?></p>
                     </div>
                   </div>
 
@@ -637,7 +386,7 @@
 					 <label>US fathom (fath)</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $us_nautical_fathom ;?></p>
                     </div>
                   </div>
                 </form>
@@ -656,841 +405,20 @@
 					 <label>Admiralty mile</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $admirly_mile;?></p>
                     </div>
 					<div class="col-sm-3">
 					 <label>Admiralty cable length</label>
 					</div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
+                      <p><?php echo $admirly_cable_length;?></p>
                     </div>
                   </div>
                 </form>
               </div>
             </div>
 
-			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Spanish Customary Units Still In Use Today</h4></div>
-				<div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
-				<span class="" >These units are still actively used in some countries of Latin America. Their values vary from country to country. You can find more old Spanish customary units on our historical lengths page.</span>
-              </div>
-              <div class="panel-body mai-end">
-                <form method = "POST">
-                  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>cuadra of Argentina</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>vara of Dominican Republic</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>cuadra of Bolivia</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>vara of Ecuador</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>cuadra of Chile</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>vara of El Salvador</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>cuadra of Colombia</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>vara of Guatemala</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				   <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>cuadra of Ecuador</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>vara of Honduras</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				   <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>cuadra of Nicaragua</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>vara of Mexico</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				   <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>cuadra of Paraguay</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>vara of Nicaragua</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				   <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>cuadra of Uruguay</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>vara of Panama</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				   <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>vara of Argentina</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>vara of Paraguay</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				   <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>vara of Brazil</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>vara of Peru (peruana)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				   <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>vara of Chile</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>vara of Peru (espanola)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				   <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>vara of Colombia</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>vara of Uruguay</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				   <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>vara of Costa Rica</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>vara of Sao Tome and Principe</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				   <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>vara of Cuba</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>vara of Venezuela</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-                </form>
-              </div>
-            </div>
-
-			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Japanese</h4></div>
-              <div class="panel-body mai-end">
-                <form method = "POST">
-                  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>ri</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>shaku</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>cho</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>sun</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>jo</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>bu</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>hiro</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>rin</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>ken</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>mo</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Chinese units of 1930</h4></div>
-              <div class="panel-body mai-end">
-                <form method = "POST">
-                  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>li</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>fen</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>yin</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>li</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>zhang</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>hao</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>chi</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>si</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>cun</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>hu</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Chinese units of 1915</h4></div>
-              <div class="panel-body mai-end">
-                <form method = "POST">
-                  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>li</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>cun</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>yin</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>fen</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>zhang</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>li</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>bu</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>hao</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>chi</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>si</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>hu</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Hong Kong units</h4></div>
-              <div class="panel-body mai-end">
-                <form method = "POST">
-                  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>cek</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>tsun</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>fan</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Thai units</h4></div>
-				<div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
-				<span class="" >Some of these units are still in use even though metric system was formally established in 1923. Before the metrication the old units were standartied to exact metric values.</span>
-              </div>
-              <div class="panel-body mai-end">
-                <form method = "POST">
-                  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>yot</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>sok</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>sen</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>khuep</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>wa</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>nio</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>krabiat</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Optical</h4></div>
-              <div class="panel-body mai-end">
-                <form method = "POST">
-                  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>dioptre (diopter)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-			
-			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Geographical (German)</h4></div>
-              <div class="panel-body mai-end">
-                <form method = "POST">
-                  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>geographical mile</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Computer Equipment</h4></div>
-				<div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
-				<span class="" >A rack unit, U or RU is a unit of measure that describes the height of equipment designed to mount in a 19-inch rack or a 23-inch rack. The 19-inch (482.6 mm) or 23-inch (584.2 mm) dimension refers to the width of the equipment mounting frame in the rack including the frame; the width of the equipment that can be mounted inside the rack is less.</span>
-              </div>
-              <div class="panel-body mai-end">
-                <form method = "POST">
-                  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>rack unit (U)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>horizontal pitch (HP)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Typographical (British and U.S. - ATA system)</h4></div>
-              <div class="panel-body mai-end">
-                <form method = "POST">
-                  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>pica</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>point [PostScript] (pt)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				   <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>pica [PostScript]</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>pixel (px)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				   <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>point (pt)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>twip</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Typographical (Europe - Didot system)</h4></div>
-              <div class="panel-body mai-end">
-                <form method = "POST">
-                  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>cicero</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>point (pt)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>European footwear unit</h4></div>
-              <div class="panel-body mai-end">
-                <form method = "POST">
-                  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>Paris point</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Astronomical</h4></div>
-              <div class="panel-body mai-end">
-                <form method = "POST">
-                  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>red shift (z)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>astronomical unit (au)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				   <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>parsec (pc)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>light minute</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				   <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>light year</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>light second</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Grace Hopper's units of distance</h4></div>
-				<div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
-				<span class="" >Grace Hopper is famous for her nanoseconds visual aid. People used to ask her why satellite communication took so long. She started handing out pieces of wire that were just under one foot long (11.80 inches) - the distance that light travels in one nanosecond. She also passed out packets of pepper, calling the individual grains of ground pepper picoseconds. She also used these aids to illustrate why computers had to be small to be fast.</span>
-              </div>
-              <div class="panel-body mai-end">
-                <form method = "POST">
-                  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>light microsecond</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-					<div class="col-sm-3">
-					 <label>light nanosecond</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-
-				   <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>light picosecond</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
-              <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Natural units</h4></div>
-				<div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">
-				<span class="" >In physics, natural units are physical units of measurement based only on universal physical constants. The origin of their definition comes only from properties of nature and not from any human construct.</span>
-              </div>
-              <div class="panel-body mai-end">
-                <form method = "POST">
-                  <div class="form-group inline row">
-					<div class="col-sm-3">
-					 <label>Planck length (L)</label>
-					</div>
-                    <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs">
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
+	
 
 		  </div>
 		
