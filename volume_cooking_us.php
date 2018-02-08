@@ -56,9 +56,7 @@
                 </span>
               </div>
             </div>
-			<div class="panel panel-default" style="background:white;height:100px;padding:10px;background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);margin-bottom:20px;">
-				<h1 style="text-align:center;color:white;font-weight:bold;padding:25px;">Ad Block</h1>
-			</div>
+			<?php include("advertisement_top.php");?>
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;">
                 <h4>Cooking (U.S.)
@@ -72,14 +70,14 @@
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs cup" onkeyup="from_cup();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
+                      <input type="number" class="boots_form-control form-control-xs cup" onkeyup="from_cup();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                     <div class="col-sm-3">
                       <label>tablespoon
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs tablespoon" onkeyup="from_tablespoon();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
+                      <input type="number" class="boots_form-control form-control-xs tablespoon" onkeyup="from_tablespoon();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                   <div class="form-group inline row">
@@ -88,15 +86,13 @@
                       </label>
                     </div>
                     <div class="col-sm-3">
-                      <input type="text" class="boots_form-control form-control-xs teaspoon" onkeyup="from_teaspoon();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
+                      <input type="number" class="boots_form-control form-control-xs teaspoon" onkeyup="from_teaspoon();" onkeydown="javascript: return event.keyCode == 69 ? false : true">
                     </div>
                   </div>
                 </form>
               </div>
             </div>
-			<div class="panel panel-default" style="background:white;height:100px;padding:10px;background:#fe8458;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);margin-bottom:20px;">
-				<h1 style="text-align:center;color:white;font-weight:bold;padding:25px;">Ad Block</h1>
-			</div>
+			<?php include("advertisement_bottom.php");?>
 		 </div>
            <?php include("right_sidebar.php");?>
           <!--Date Picker-->

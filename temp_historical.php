@@ -52,6 +52,7 @@
                 <h4>Fahrenheit (&deg;F), Celsius (&deg;C) and More. All Scales Temperature Converter.</h4>
               </div>
             </div>
+			<?php include("advertisement_top.php");?>
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;">
@@ -93,7 +94,7 @@
                 </form>
               </div>
             </div>
-
+			<?php include("advertisement_bottom.php");?>
           </div>
 		<?php include("right_sidebar.php");?>
           <!--Date Picker-->

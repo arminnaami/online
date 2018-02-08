@@ -46,6 +46,8 @@
            
             
 		<div class="col-md-6">
+			<?php include("advertisement_top.php");?>
+
 		   <div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Convert Weight and Mass Units Instantly</h4></div>
               <div class="panel-body mai-end" style="padding:14px 20px;margin:0px;">

@@ -57,6 +57,7 @@
 				<span class="" >This converter features units that are still used today. There is also a special converter for historical units of weight you might want to visit for ancient, medieval and other old units that are no longer used.</span>
               </div>
             </div>
+			<?php include("advertisement_top.php");?>
 
 			<div class="panel panel-default" style="background:white;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,0.25);">
               <div class="panel-heading panel-heading-divider" style="padding:14px 20px;margin:0px;"><h4>Avoirdupois (U.S. / British)</h4></div>
@@ -133,6 +134,8 @@
                 </form>
               </div>
             </div>
+			
+
 		  </div>
 		 <?php include("right_sidebar.php");?>    
 		<!--Date Picker-->
